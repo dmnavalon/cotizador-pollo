@@ -1,0 +1,25 @@
+{
+  "name": "cotizador-pollo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape": "tsx scripts/scrape-local.ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.0",
+    "next": "14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
