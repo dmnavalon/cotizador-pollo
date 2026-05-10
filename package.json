@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "scrape": "tsx scripts/scrape-local.ts"
+    "scrape": "tsx scripts/scrape-local.ts",
+    "scrape:full": "tsx scripts/scrape-full.ts"
   },
   "dependencies": {
     "@octokit/rest": "^21.0.0",
@@ -19,6 +20,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "playwright": "^1.59.1",
     "tsx": "^4.19.0",
     "typescript": "^5"
   }

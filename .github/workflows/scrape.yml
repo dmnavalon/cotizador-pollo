@@ -1,0 +1,56 @@
+name: Scrape semanal
+
+on:
+  schedule:
+    # Lunes 02:00 UTC = Domingo 22:00 hora Chile (CLT, abril–septiembre)
+    # En CLST (septiembre–abril, UTC-3) corre Domingo 23:00 hora Chile.
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Motivo del scrape manual'
+        required: false
+        default: 'manual desde la web'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar Chromium para Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Correr scrape
+        run: npm run scrape:full
+
+      - name: Commitear y pushear snapshot
+        run: |
+          git config user.name "cotizador-bot"
+          git config user.email "bot@cotizador-pollo.vercel.app"
+          if ! git diff --quiet data/products.json; then
+            git add data/products.json
+            git commit -m "chore: scrape automático $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✓ Snapshot actualizado y pusheado"
+          else
+            echo "Sin cambios en data/products.json"
+          fi

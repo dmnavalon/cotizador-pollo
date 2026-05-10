@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "sites": [
     {
       "id": "alvi",
@@ -21,39 +21,33 @@
       "name": "Jumbo",
       "baseUrl": "https://www.jumbo.cl",
       "searchUrlTemplate": "https://www.jumbo.cl/buscapagina?ft={q}",
-      "queries": [
-        "pechuga pollo"
-      ],
-      "strategy": "unknown",
-      "enabled": false,
+      "queries": ["pechuga pollo"],
+      "strategy": "next_data",
+      "enabled": true,
       "needsChromium": true,
-      "notes": "Cloudflare + SPA. Necesita Chromium (Vercel Pro)."
+      "notes": "VTEX SPA. Scrapeado vía Playwright en GH Actions."
     },
     {
       "id": "lider",
       "name": "Lider",
       "baseUrl": "https://www.lider.cl",
       "searchUrlTemplate": "https://www.lider.cl/supermercado/search?search_query={q}",
-      "queries": [
-        "pechuga pollo"
-      ],
+      "queries": ["pechuga pollo"],
       "strategy": "unknown",
-      "enabled": false,
+      "enabled": true,
       "needsChromium": true,
-      "notes": "Cloudflare + SPA. Necesita Chromium."
+      "notes": "Cloudflare + SPA. Scrapeado vía Playwright en GH Actions."
     },
     {
       "id": "tottus",
       "name": "Tottus",
       "baseUrl": "https://tottus.falabella.com",
       "searchUrlTemplate": "https://tottus.falabella.com/tottus-cl/search?Ntt={q}",
-      "queries": [
-        "pechuga pollo"
-      ],
-      "strategy": "unknown",
-      "enabled": false,
+      "queries": ["pechuga pollo"],
+      "strategy": "next_data",
+      "enabled": true,
       "needsChromium": true,
-      "notes": "Cloudflare challenge. Necesita Chromium."
+      "notes": "Cloudflare challenge. Scrapeado vía Playwright en GH Actions."
     },
     {
       "id": "agrosuperventas-com",
@@ -65,9 +59,9 @@
         "pechuga deshuesada"
       ],
       "strategy": "unknown",
+      "enabled": true,
       "needsChromium": true,
-      "enabled": false,
-      "notes": "Auto-detectado: unknown, 0 productos preview"
+      "notes": "Auto-detectado desde la web. Activado para correr vía Playwright en GH Actions."
     },
     {
       "id": "pollosro-cl",
@@ -79,9 +73,9 @@
         "pechuga deshuesada"
       ],
       "strategy": "unknown",
+      "enabled": true,
       "needsChromium": false,
-      "enabled": false,
-      "notes": "Auto-detectado: unknown, 0 productos preview"
+      "notes": "Auto-detectado desde la web. Probará fetch primero, fallback a Playwright."
     },
     {
       "id": "elcarnicero-cl",
@@ -93,9 +87,9 @@
         "pechuga deshuesada"
       ],
       "strategy": "unknown",
+      "enabled": true,
       "needsChromium": true,
-      "enabled": false,
-      "notes": "Auto-detectado: unknown, 0 productos preview"
+      "notes": "Auto-detectado desde la web. Activado para correr vía Playwright en GH Actions."
     }
   ]
 }
