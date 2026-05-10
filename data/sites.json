@@ -6,7 +6,11 @@
       "name": "Alvi",
       "baseUrl": "https://www.alvi.cl",
       "searchUrlTemplate": "https://www.alvi.cl/search?q={q}",
-      "queries": ["pechuga pollo", "pechuga deshuesada", "filete pechuga"],
+      "queries": [
+        "pechuga pollo",
+        "pechuga deshuesada",
+        "filete pechuga"
+      ],
       "strategy": "next_data",
       "enabled": true,
       "needsChromium": false,
@@ -17,7 +21,9 @@
       "name": "Jumbo",
       "baseUrl": "https://www.jumbo.cl",
       "searchUrlTemplate": "https://www.jumbo.cl/buscapagina?ft={q}",
-      "queries": ["pechuga pollo"],
+      "queries": [
+        "pechuga pollo"
+      ],
       "strategy": "unknown",
       "enabled": false,
       "needsChromium": true,
@@ -28,7 +34,9 @@
       "name": "Lider",
       "baseUrl": "https://www.lider.cl",
       "searchUrlTemplate": "https://www.lider.cl/supermercado/search?search_query={q}",
-      "queries": ["pechuga pollo"],
+      "queries": [
+        "pechuga pollo"
+      ],
       "strategy": "unknown",
       "enabled": false,
       "needsChromium": true,
@@ -39,11 +47,27 @@
       "name": "Tottus",
       "baseUrl": "https://tottus.falabella.com",
       "searchUrlTemplate": "https://tottus.falabella.com/tottus-cl/search?Ntt={q}",
-      "queries": ["pechuga pollo"],
+      "queries": [
+        "pechuga pollo"
+      ],
       "strategy": "unknown",
       "enabled": false,
       "needsChromium": true,
       "notes": "Cloudflare challenge. Necesita Chromium."
+    },
+    {
+      "id": "agrosuperventas-com",
+      "name": "Agrosuper Ventas Online",
+      "baseUrl": "https://www.agrosuperventas.com",
+      "searchUrlTemplate": "https://www.agrosuperventas.com/search?q={q}",
+      "queries": [
+        "pechuga pollo",
+        "pechuga deshuesada"
+      ],
+      "strategy": "unknown",
+      "needsChromium": true,
+      "enabled": false,
+      "notes": "Auto-detectado: unknown, 0 productos preview"
     }
   ]
 }
