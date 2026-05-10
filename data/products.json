@@ -1,14 +1,231 @@
 {
-  "updatedAt": "2026-05-10T23:10:49.834Z",
+  "updatedAt": "2026-05-10T23:54:45.794Z",
   "scrapes": [
     {
       "store": "Alvi",
       "products": [],
       "error": null,
-      "durationMs": 72
+      "durationMs": 299
+    },
+    {
+      "store": "Jumbo",
+      "products": [],
+      "error": "Playwright corrió pero no encontró productos válidos",
+      "durationMs": 16826
+    },
+    {
+      "store": "Lider",
+      "products": [],
+      "error": "Playwright corrió pero no encontró productos válidos",
+      "durationMs": 10622
+    },
+    {
+      "store": "Tottus",
+      "products": [],
+      "error": "Playwright corrió pero no encontró productos válidos",
+      "durationMs": 9917
+    },
+    {
+      "store": "Agrosuper Ventas Online",
+      "products": [],
+      "error": "Playwright corrió pero no encontró productos válidos",
+      "durationMs": 30331
+    },
+    {
+      "store": "Pollos RO",
+      "products": [],
+      "error": "Playwright corrió pero no encontró productos válidos",
+      "durationMs": 22490
+    },
+    {
+      "store": "El Carnicero",
+      "products": [
+        {
+          "store": "El Carnicero",
+          "id": "el-carnicero-pechuga-deshuesada-1-kg.html",
+          "name": "Pechuga Deshuesada 1 kg 12% Dscto",
+          "brand": "Sin marca",
+          "format": "1 kg",
+          "weightKg": 1,
+          "url": "https://elcarnicero.cl/ofertas/pechuga-deshuesada-1-kg.html",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3690,
+              "pricePerKg": 3690,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3690,
+          "ean": null
+        },
+        {
+          "store": "El Carnicero",
+          "id": "el-carnicero-pechuga-deshuesada-porcionada-caja-5-kg.html",
+          "name": "Caja Pechuga Deshuesada Porcionada 5 kg 12% Dscto",
+          "brand": "Sin marca",
+          "format": "5 kg",
+          "weightKg": 5,
+          "url": "https://elcarnicero.cl/ofertas/pechuga-deshuesada-porcionada-caja-5-kg.html",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 18450,
+              "pricePerKg": 3690,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3690,
+          "ean": null
+        },
+        {
+          "store": "El Carnicero",
+          "id": "el-carnicero-caja-pechuga-deshuesada-1-kg.html",
+          "name": "Caja Pechuga Deshuesada Porcionada 1 kg 12% Dscto",
+          "brand": "Sin marca",
+          "format": "1 kg",
+          "weightKg": 1,
+          "url": "https://elcarnicero.cl/ofertas/caja-pechuga-deshuesada-1-kg.html",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3690,
+              "pricePerKg": 3690,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3690,
+          "ean": null
+        },
+        {
+          "store": "El Carnicero",
+          "id": "el-carnicero-caja-pechuga-deshuesada-3-kg.html",
+          "name": "Caja Pechuga Deshuesada Porcionada 3 kg 12% Dscto",
+          "brand": "Sin marca",
+          "format": "3 kg",
+          "weightKg": 3,
+          "url": "https://elcarnicero.cl/ofertas/caja-pechuga-deshuesada-3-kg.html",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 11070,
+              "pricePerKg": 3690,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3690,
+          "ean": null
+        }
+      ],
+      "error": null,
+      "durationMs": 20537
     }
   ],
-  "allProducts": [],
-  "best": null,
-  "totalProducts": 0
+  "allProducts": [
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-pechuga-deshuesada-1-kg.html",
+      "name": "Pechuga Deshuesada 1 kg 12% Dscto",
+      "brand": "Sin marca",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://elcarnicero.cl/ofertas/pechuga-deshuesada-1-kg.html",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 3690,
+          "pricePerKg": 3690,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3690,
+      "ean": null
+    },
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-pechuga-deshuesada-porcionada-caja-5-kg.html",
+      "name": "Caja Pechuga Deshuesada Porcionada 5 kg 12% Dscto",
+      "brand": "Sin marca",
+      "format": "5 kg",
+      "weightKg": 5,
+      "url": "https://elcarnicero.cl/ofertas/pechuga-deshuesada-porcionada-caja-5-kg.html",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 18450,
+          "pricePerKg": 3690,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3690,
+      "ean": null
+    },
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-caja-pechuga-deshuesada-1-kg.html",
+      "name": "Caja Pechuga Deshuesada Porcionada 1 kg 12% Dscto",
+      "brand": "Sin marca",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://elcarnicero.cl/ofertas/caja-pechuga-deshuesada-1-kg.html",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 3690,
+          "pricePerKg": 3690,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3690,
+      "ean": null
+    },
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-caja-pechuga-deshuesada-3-kg.html",
+      "name": "Caja Pechuga Deshuesada Porcionada 3 kg 12% Dscto",
+      "brand": "Sin marca",
+      "format": "3 kg",
+      "weightKg": 3,
+      "url": "https://elcarnicero.cl/ofertas/caja-pechuga-deshuesada-3-kg.html",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 11070,
+          "pricePerKg": 3690,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3690,
+      "ean": null
+    }
+  ],
+  "best": {
+    "store": "El Carnicero",
+    "id": "el-carnicero-pechuga-deshuesada-1-kg.html",
+    "name": "Pechuga Deshuesada 1 kg 12% Dscto",
+    "brand": "Sin marca",
+    "format": "1 kg",
+    "weightKg": 1,
+    "url": "https://elcarnicero.cl/ofertas/pechuga-deshuesada-1-kg.html",
+    "image": null,
+    "tiers": [
+      {
+        "minQty": 1,
+        "unitPrice": 3690,
+        "pricePerKg": 3690,
+        "label": "regular"
+      }
+    ],
+    "bestPricePerKg": 3690,
+    "ean": null
+  },
+  "totalProducts": 4
 }
