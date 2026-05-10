@@ -68,6 +68,20 @@
       "needsChromium": true,
       "enabled": false,
       "notes": "Auto-detectado: unknown, 0 productos preview"
+    },
+    {
+      "id": "pollosro-cl",
+      "name": "Pollos RO",
+      "baseUrl": "https://www.pollosro.cl",
+      "searchUrlTemplate": "https://www.pollosro.cl/search?q={q}",
+      "queries": [
+        "pechuga pollo",
+        "pechuga deshuesada"
+      ],
+      "strategy": "unknown",
+      "needsChromium": false,
+      "enabled": false,
+      "notes": "Auto-detectado: unknown, 0 productos preview"
     }
   ]
 }
