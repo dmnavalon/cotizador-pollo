@@ -82,6 +82,20 @@
       "needsChromium": false,
       "enabled": false,
       "notes": "Auto-detectado: unknown, 0 productos preview"
+    },
+    {
+      "id": "elcarnicero-cl",
+      "name": "El Carnicero",
+      "baseUrl": "https://www.elcarnicero.cl",
+      "searchUrlTemplate": "https://www.elcarnicero.cl/search?q={q}",
+      "queries": [
+        "pechuga pollo",
+        "pechuga deshuesada"
+      ],
+      "strategy": "unknown",
+      "needsChromium": true,
+      "enabled": false,
+      "notes": "Auto-detectado: unknown, 0 productos preview"
     }
   ]
 }
