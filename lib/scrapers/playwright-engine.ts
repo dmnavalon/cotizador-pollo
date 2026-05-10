@@ -1,8 +1,7 @@
 /**
  * Scraper basado en Playwright para sitios que requieren JS rendering
  * (Cloudflare challenge, SPAs). Solo se usa desde scripts/scrape-full.ts
- * que corre en GitHub Actions — NUNCA importar desde la app Next.js,
- * Playwright no cabe en una serverless function.
+ * que corre en GitHub Actions — NUNCA importar desde la app Next.js.
  */
 import type { Product, ScrapeResult, PriceTier, SiteConfig } from '../types';
 
@@ -52,12 +51,7 @@ function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Pr
   const pricePerKg = Math.round(c.price / c.weight);
   if (pricePerKg < 1000 || pricePerKg > 50000) return null;
 
-  const tier: PriceTier = {
-    minQty: 1,
-    unitPrice: c.price,
-    pricePerKg,
-    label: 'regular',
-  };
+  const tier: PriceTier = { minQty: 1, unitPrice: c.price, pricePerKg, label: 'regular' };
   let url = c.url;
   if (url.startsWith('/')) url = baseUrl.replace(/\/$/, '') + url;
   if (!url.startsWith('http')) url = baseUrl;
@@ -78,14 +72,14 @@ function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Pr
 }
 
 function deepFindProducts(obj: any, depth = 0): any[] {
-  if (depth > 8 || !obj || typeof obj !== 'object') return [];
+  if (depth > 10 || !obj || typeof obj !== 'object') return [];
   if (Array.isArray(obj)) {
     if (obj.length > 0 && typeof obj[0] === 'object' && obj[0]) {
       const first = obj[0];
       const hasName = first.name || first.productName || first.displayName || first.nameComplete;
       const hasPrice =
         first.price !== undefined || first.sellers || first.priceSteps || first.prices || first.offers;
-      if (hasName && hasPrice && obj.length < 200) return obj;
+      if (hasName && hasPrice && obj.length < 300) return obj;
     }
     const out: any[] = [];
     for (const item of obj) {
@@ -117,10 +111,13 @@ function normalizeNextProduct(raw: any): RawCandidate | null {
     const seller = raw.sellers?.[0];
     price = seller?.price || raw.price || raw.salePrice || raw.listPrice || 0;
   }
+  if (raw.priceRange?.sellingPrice?.lowPrice && (!price || raw.priceRange.sellingPrice.lowPrice < price)) {
+    price = raw.priceRange.sellingPrice.lowPrice;
+  }
   let weight: number | null = raw.unitMultiplierUn;
   if (!weight) weight = parseWeightKg(`${raw.format || ''} ${name}`);
   if (!weight) return null;
-  let url = raw.detailUrl || raw.url || raw.link || '';
+  let url = raw.detailUrl || raw.url || raw.link || raw.linkText || '';
   if (url.endsWith('/p')) url = url.slice(0, -2);
   return {
     name,
@@ -138,7 +135,11 @@ async function withBrowser<T>(fn: (browser: Browser) => Promise<T>): Promise<T> 
   const { chromium } = await import('playwright');
   const browser = await chromium.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-dev-shm-usage'],
+    args: [
+      '--no-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-blink-features=AutomationControlled',
+    ],
   });
   try {
     return await fn(browser);
@@ -151,17 +152,102 @@ async function newPage(browser: Browser): Promise<Page> {
   const ctx = await browser.newContext({
     userAgent: UA,
     locale: 'es-CL',
+    timezoneId: 'America/Santiago',
     viewport: { width: 1366, height: 900 },
-    extraHTTPHeaders: { 'Accept-Language': 'es-CL,es;q=0.9' },
+    extraHTTPHeaders: {
+      'Accept-Language': 'es-CL,es;q=0.9',
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    },
+  });
+  // Anti-detección básica
+  await ctx.addInitScript(() => {
+    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+    Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+    Object.defineProperty(navigator, 'languages', { get: () => ['es-CL', 'es', 'en'] });
   });
   return ctx.newPage();
 }
 
-/**
- * Scraper genérico Playwright: navega, espera hidratación, intenta extraer
- * por múltiples estrategias.
- */
-export async function scrapeSiteWithPlaywright(site: SiteConfig): Promise<ScrapeResult> {
+async function waitForHydration(page: Page, timeoutMs = 15000): Promise<void> {
+  const start = Date.now();
+  // Esperar a que el contenido tenga al menos "pechuga" en algún lado o pasen 15s
+  while (Date.now() - start < timeoutMs) {
+    try {
+      const hasContent = await page.evaluate(() => {
+        const txt = document.body?.innerText || '';
+        return /pechuga/i.test(txt) || /\$\s?\d{2,}/.test(txt);
+      });
+      if (hasContent) return;
+    } catch {}
+    await page.waitForTimeout(800);
+  }
+}
+
+async function tryExtractFromNextData(page: Page, allCandidates: RawCandidate[], seen: Set<string>): Promise<number> {
+  const nextDataStr: string | null = await page
+    .locator('#__NEXT_DATA__')
+    .first()
+    .textContent({ timeout: 2000 })
+    .catch(() => null);
+  if (!nextDataStr) return 0;
+  try {
+    const parsed = JSON.parse(nextDataStr);
+    const arr = deepFindProducts(parsed);
+    let added = 0;
+    for (const r of arr) {
+      const c = normalizeNextProduct(r);
+      if (c && !seen.has(c.url || c.name)) {
+        seen.add(c.url || c.name);
+        allCandidates.push(c);
+        added++;
+      }
+    }
+    return added;
+  } catch {
+    return 0;
+  }
+}
+
+async function tryExtractFromDom(page: Page, allCandidates: RawCandidate[], seen: Set<string>): Promise<number> {
+  const cards = await page.evaluate(() => {
+    const out: any[] = [];
+    const seenT = new Set<string>();
+    const els = Array.from(document.querySelectorAll('a, article, li, div'));
+    for (const el of els) {
+      const txt = ((el as HTMLElement).innerText || '').trim();
+      if (!txt || txt.length > 500 || txt.length < 15) continue;
+      if (!/pechuga/i.test(txt)) continue;
+      if (!/\$\s?\d/.test(txt)) continue;
+      const key = txt.slice(0, 120);
+      if (seenT.has(key)) continue;
+      seenT.add(key);
+      const link =
+        (el as HTMLElement).closest('a')?.getAttribute('href') ||
+        el.querySelector('a')?.getAttribute('href') ||
+        '';
+      out.push({ text: txt.replace(/\s+/g, ' ').slice(0, 400), href: link });
+      if (out.length >= 25) break;
+    }
+    return out;
+  });
+  let added = 0;
+  for (const card of cards) {
+    const m = (card.text as string).match(/(.+?)\s*\$\s*([\d.,]+)/);
+    if (!m) continue;
+    const name = m[1].trim();
+    const price = clpToInt(m[2]);
+    const weight = parseWeightKg(card.text);
+    if (!weight) continue;
+    if (!seen.has(card.href || name)) {
+      seen.add(card.href || name);
+      allCandidates.push({ name, url: card.href, price, weight });
+      added++;
+    }
+  }
+  return added;
+}
+
+export async function scrapeSiteWithPlaywright(site: SiteConfig, verbose = true): Promise<ScrapeResult> {
   const start = Date.now();
   try {
     const result = await withBrowser(async (browser) => {
@@ -171,70 +257,35 @@ export async function scrapeSiteWithPlaywright(site: SiteConfig): Promise<Scrape
       for (const query of site.queries.length ? site.queries : ['pechuga pollo']) {
         const page = await newPage(browser);
         const url = site.searchUrlTemplate.replace('{q}', encodeURIComponent(query));
+        if (verbose) console.log(`      [${site.name}] → ${url}`);
         try {
-          await page.goto(url, { timeout: 30000, waitUntil: 'domcontentloaded' });
-          // Esperar a que cargue / pase challenge
-          await page.waitForTimeout(4000);
-          try { await page.mouse.wheel(0, 1500); await page.waitForTimeout(1500); } catch {}
-          try { await page.mouse.wheel(0, 1500); await page.waitForTimeout(1500); } catch {}
+          await page.goto(url, { timeout: 35000, waitUntil: 'domcontentloaded' });
+          await page.waitForTimeout(3000);
 
-          // Estrategia 1: __NEXT_DATA__
-          const nextDataStr: string | null = await page
-            .locator('#__NEXT_DATA__')
-            .first()
-            .textContent({ timeout: 2000 })
-            .catch(() => null);
-          if (nextDataStr) {
-            try {
-              const parsed = JSON.parse(nextDataStr);
-              const arr = deepFindProducts(parsed);
-              for (const r of arr) {
-                const c = normalizeNextProduct(r);
-                if (c && !seen.has(c.url || c.name)) {
-                  seen.add(c.url || c.name);
-                  allCandidates.push(c);
-                }
-              }
-            } catch {}
+          // Si hay challenge de Cloudflare, esperar
+          const title = await page.title().catch(() => '');
+          if (/just a moment|cloudflare|attention required/i.test(title)) {
+            if (verbose) console.log(`      [${site.name}] Cloudflare challenge detectado, esperando…`);
+            await page.waitForTimeout(8000);
           }
 
-          // Estrategia 2: extraer del DOM cards visibles
-          if (allCandidates.length === 0) {
-            const cards = await page.evaluate(() => {
-              const out: any[] = [];
-              const seenT = new Set<string>();
-              const all = Array.from(document.querySelectorAll('a, article, li, div'));
-              for (const el of all) {
-                const txt = ((el as HTMLElement).innerText || '').trim();
-                if (!txt || txt.length > 400 || txt.length < 20) continue;
-                if (!/pechuga/i.test(txt)) continue;
-                if (!/\$\s?\d/.test(txt)) continue;
-                const key = txt.slice(0, 120);
-                if (seenT.has(key)) continue;
-                seenT.add(key);
-                const link = (el as HTMLElement).closest('a')?.getAttribute('href') ||
-                             el.querySelector('a')?.getAttribute('href') || '';
-                out.push({ text: txt.replace(/\s+/g, ' ').slice(0, 300), href: link });
-                if (out.length >= 15) break;
-              }
-              return out;
-            });
-            for (const card of cards) {
-              // parsear: nombre antes del primer $; precio en el $ que mejor pegue al nombre
-              const m = (card.text as string).match(/(.+?)\s*\$\s*([\d.,]+)/);
-              if (!m) continue;
-              const name = m[1].trim();
-              const price = clpToInt(m[2]);
-              const weight = parseWeightKg(card.text);
-              if (!weight) continue;
-              if (!seen.has(card.href || name)) {
-                seen.add(card.href || name);
-                allCandidates.push({ name, url: card.href, price, weight });
-              }
-            }
+          await waitForHydration(page, 15000);
+
+          // Scroll para gatillar lazy-loading
+          for (let i = 0; i < 3; i++) {
+            try { await page.mouse.wheel(0, 1500); } catch {}
+            await page.waitForTimeout(1200);
+          }
+
+          const nextAdded = await tryExtractFromNextData(page, allCandidates, seen);
+          if (verbose) console.log(`      [${site.name}] __NEXT_DATA__: +${nextAdded} candidatos`);
+
+          if (nextAdded === 0) {
+            const domAdded = await tryExtractFromDom(page, allCandidates, seen);
+            if (verbose) console.log(`      [${site.name}] DOM scan: +${domAdded} candidatos`);
           }
         } catch (e) {
-          // página específica falló, seguir con la siguiente query
+          if (verbose) console.log(`      [${site.name}] error en ${url}: ${(e as Error).message}`);
         } finally {
           await page.close();
         }
@@ -244,6 +295,15 @@ export async function scrapeSiteWithPlaywright(site: SiteConfig): Promise<Scrape
       for (const c of allCandidates) {
         const p = candidateToProduct(c, site.name, site.baseUrl);
         if (p) products.push(p);
+      }
+      if (verbose) {
+        console.log(`      [${site.name}] candidatos: ${allCandidates.length}, productos válidos: ${products.length}`);
+        if (allCandidates.length > 0 && products.length === 0) {
+          console.log(`      [${site.name}] ejemplos descartados:`);
+          allCandidates.slice(0, 3).forEach((c) => {
+            console.log(`        - "${c.name.slice(0, 80)}" $${c.price} ${c.weight}kg`);
+          });
+        }
       }
       return products;
     });

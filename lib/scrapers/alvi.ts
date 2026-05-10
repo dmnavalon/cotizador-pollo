@@ -1,7 +1,7 @@
 import type { Product, ScrapeResult, PriceTier } from '../types';
 
 const ALVI_BASE = 'https://www.alvi.cl';
-const QUERIES = ['pechuga pollo', 'pechuga deshuesada', 'filete pechuga pollo'];
+const QUERIES = ['pechuga pollo', 'pechuga deshuesada', 'filete pechuga'];
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
@@ -10,7 +10,7 @@ interface AlviPriceStep {
   promotionalPrice: number;
   minQuantity: number;
   percentualDiscount: number;
-  ppum: string; // "$4.731 x Kg"
+  ppum: string;
 }
 
 interface AlviSeller {
@@ -36,7 +36,6 @@ interface AlviProduct {
 }
 
 function parsePpum(ppum: string): number {
-  // "$4.731 x Kg" -> 4731
   const m = ppum.match(/\$?([\d.,]+)/);
   if (!m) return 0;
   return parseInt(m[1].replace(/\./g, '').replace(/,/g, ''), 10) || 0;
@@ -46,7 +45,6 @@ function isPechugaDeshuesada(name: string): boolean {
   const n = name.toLowerCase();
   if (!n.includes('pechuga')) return false;
   if (!/(deshues|fil[eé]|sin hueso)/i.test(n)) return false;
-  // Excluir productos procesados / no aptos
   if (/(apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
   return true;
 }
@@ -57,8 +55,6 @@ function toProduct(p: AlviProduct): Product | null {
   if (p.measurementUnitUn?.toLowerCase() !== 'kg') return null;
 
   const tiers: PriceTier[] = [];
-
-  // Precio regular del seller
   const seller = p.sellers?.[0];
   if (seller) {
     tiers.push({
@@ -68,8 +64,6 @@ function toProduct(p: AlviProduct): Product | null {
       label: 'regular',
     });
   }
-
-  // Precios escalonados (socio Alvi)
   for (const step of p.priceSteps || []) {
     tiers.push({
       minQty: step.minQuantity,
@@ -78,9 +72,7 @@ function toProduct(p: AlviProduct): Product | null {
       label: step.minQuantity > 1 ? `socio ${step.minQuantity}+` : 'socio',
     });
   }
-
   if (tiers.length === 0) return null;
-
   const bestPricePerKg = Math.min(...tiers.map((t) => t.pricePerKg).filter((n) => n > 0));
 
   return {
@@ -98,35 +90,49 @@ function toProduct(p: AlviProduct): Product | null {
   };
 }
 
-async function fetchQuery(query: string): Promise<AlviProduct[]> {
+async function fetchQuery(query: string, verbose = false): Promise<AlviProduct[]> {
   const url = `${ALVI_BASE}/search?q=${encodeURIComponent(query)}`;
+  if (verbose) console.log(`      [Alvi] fetch ${url}`);
   const res = await fetch(url, {
     headers: {
       'User-Agent': UA,
       Accept: 'text/html,application/xhtml+xml',
       'Accept-Language': 'es-CL,es;q=0.9',
-      'Accept-Encoding': 'gzip, deflate, br',
     },
     cache: 'no-store',
   });
+  if (verbose) console.log(`      [Alvi] HTTP ${res.status} para "${query}"`);
   if (!res.ok) throw new Error(`Alvi ${query}: HTTP ${res.status}`);
   const html = await res.text();
-
-  const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">(.*?)<\/script>/);
-  if (!match) throw new Error('Alvi: no __NEXT_DATA__ found');
-
+  if (verbose) {
+    const pechugaCount = (html.match(/pechuga/gi) || []).length;
+    console.log(`      [Alvi] HTML ${html.length} bytes, "pechuga" x${pechugaCount}`);
+  }
+  const match = html.match(/<script id="__NEXT_DATA__"[^>]*>(.*?)<\/script>/);
+  if (!match) {
+    if (verbose) console.log(`      [Alvi] NO __NEXT_DATA__ found — primer 300 chars: ${html.slice(0, 300)}`);
+    throw new Error('Alvi: no __NEXT_DATA__ found');
+  }
   const json = JSON.parse(match[1]);
   const products =
     json?.props?.pageProps?.intelliSearchData?.availableProducts ||
     json?.props?.pageProps?.dehydratedState?.queries?.[0]?.state?.data?.availableProducts ||
     [];
+  if (verbose) console.log(`      [Alvi] ${products.length} productos en __NEXT_DATA__`);
   return products as AlviProduct[];
 }
 
-export async function scrapeAlvi(): Promise<ScrapeResult> {
+export async function scrapeAlvi(verbose = false): Promise<ScrapeResult> {
   const start = Date.now();
   try {
-    const all = await Promise.all(QUERIES.map((q) => fetchQuery(q).catch(() => [])));
+    const all = await Promise.all(
+      QUERIES.map((q) =>
+        fetchQuery(q, verbose).catch((e) => {
+          if (verbose) console.log(`      [Alvi] error en "${q}": ${e.message}`);
+          return [] as AlviProduct[];
+        })
+      )
+    );
     const seen = new Map<string, AlviProduct>();
     for (const list of all) {
       for (const p of list) {
@@ -143,7 +149,7 @@ export async function scrapeAlvi(): Promise<ScrapeResult> {
     return {
       store: 'Alvi',
       products,
-      error: null,
+      error: products.length === 0 ? 'fetch sin productos válidos' : null,
       durationMs: Date.now() - start,
     };
   } catch (e) {
