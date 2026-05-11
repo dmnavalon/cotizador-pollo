@@ -1,4 +1,5 @@
 import { readSnapshot } from '@/lib/data-snapshot';
+import { sortByStockThenPrice } from '@/lib/scrape';
 import RefreshButton from './RefreshButton';
 import Link from 'next/link';
 
@@ -31,6 +32,12 @@ function formatAbsolute(iso: string): string {
   });
 }
 
+function StockBadge({ inStock }: { inStock: boolean | null }) {
+  if (inStock === true) return <span className="stock-badge stock-ok">✓ Stock</span>;
+  if (inStock === false) return <span className="stock-badge stock-no">⛔ Sin stock</span>;
+  return <span className="stock-badge stock-unk">? Stock</span>;
+}
+
 export default function Home() {
   const snapshot = readSnapshot();
 
@@ -38,15 +45,16 @@ export default function Home() {
     return (
       <main className="wrap">
         <h1>Cotizador Pechuga de Pollo</h1>
-        <p className="sub">Aún no hay datos. Aprieta "Actualizar ahora" para correr el primer scrape.</p>
+        <p className="sub">Aún no hay datos. Aprieta "Actualizar ahora".</p>
         <RefreshButton />
       </main>
     );
   }
 
-  const { best, allProducts, scrapes, updatedAt, totalProducts } = snapshot;
-  const underBudget = allProducts.filter((p) => p.bestPricePerKg < 5500);
-  const overBudget = allProducts.filter((p) => p.bestPricePerKg >= 5500);
+  const sorted = sortByStockThenPrice(snapshot.allProducts);
+  const best = sorted[0] || snapshot.best;
+  const underBudget = sorted.filter((p) => p.bestPricePerKg < 5500);
+  const overBudget = sorted.filter((p) => p.bestPricePerKg >= 5500);
 
   return (
     <main className="wrap">
@@ -54,25 +62,30 @@ export default function Home() {
         <div className="topbar-meta">
           <div className="updated">
             <span className="dot" />
-            Actualizado <b>{formatRelative(updatedAt)}</b>
-            <span className="abs">{formatAbsolute(updatedAt)}</span>
+            Actualizado <b>{formatRelative(snapshot.updatedAt)}</b>
+            <span className="abs">{formatAbsolute(snapshot.updatedAt)}</span>
           </div>
           <Link href="/sites" className="manage-link">
-            ⚙ Gestionar sitios
+            ⚙ Sitios
           </Link>
         </div>
         <RefreshButton />
       </header>
 
       <h1>Pechuga de pollo deshuesada</h1>
-      <p className="sub">Menor precio/kg entre {scrapes.length} tiendas · {totalProducts} productos encontrados</p>
+      <p className="sub">
+        Menor precio/kg <b>con stock</b> entre {snapshot.scrapes.length} tiendas · {snapshot.totalProducts} productos
+      </p>
 
       {best && (
         <section className="hero">
-          <div className="tag">★ MEJOR PRECIO/KG</div>
+          <div className="tag">★ MEJOR PRECIO {best.inStock === true ? 'CON STOCK' : ''}</div>
           <div className="hero-name">{best.name}</div>
           <div className="hero-brand">
             {best.brand} · {best.format} · <span className="store">{best.store}</span>
+            <span style={{ marginLeft: 8 }}>
+              <StockBadge inStock={best.inStock} />
+            </span>
           </div>
           <div className="hero-price">
             {clp(best.bestPricePerKg)} <span className="unit">/ kg</span>
@@ -88,7 +101,7 @@ export default function Home() {
         {underBudget.map((p) => (
           <ProductCard key={p.id} p={p} />
         ))}
-        {underBudget.length === 0 && <div className="empty">Ningún producto bajo $5.500/kg en este momento.</div>}
+        {underBudget.length === 0 && <div className="empty">Nada bajo $5.500/kg ahora mismo.</div>}
       </div>
 
       {overBudget.length > 0 && (
@@ -104,18 +117,28 @@ export default function Home() {
 
       <h2>Estado por tienda</h2>
       <div className="stores">
-        {scrapes.map((s) => (
-          <div key={s.store} className={`store-row ${s.error ? 'err' : 'ok'}`}>
-            <div className="store-name">{s.store}</div>
-            <div className="store-stat">
-              {s.error ? <span className="err-text">{s.error}</span> : <b>{s.products.length}</b>} <span className="muted">productos</span>
+        {snapshot.scrapes.map((s) => {
+          const inStock = s.products.filter((p) => p.inStock === true).length;
+          return (
+            <div key={s.store} className={`store-row ${s.error ? 'err' : 'ok'}`}>
+              <div className="store-name">{s.store}</div>
+              <div className="store-stat">
+                {s.error ? (
+                  <span className="err-text">{s.error.slice(0, 50)}</span>
+                ) : (
+                  <>
+                    <b>{s.products.length}</b> productos
+                    {inStock > 0 && <span className="muted"> · {inStock} con stock</span>}
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <footer className="footer">
-        Bot actualiza cada domingo 22:00 hora Chile. Datos: alvi.cl y otros.
+        Bot actualiza cada domingo 22:00 hora Chile vía GitHub Actions.
       </footer>
 
       <style>{styles}</style>
@@ -125,13 +148,17 @@ export default function Home() {
 
 function ProductCard({ p, faded }: { p: any; faded?: boolean }) {
   const tiers = p.tiers as { minQty: number; unitPrice: number; pricePerKg: number; label: string }[];
+  const outOfStock = p.inStock === false;
   return (
-    <article className={`prod ${faded ? 'faded' : ''}`}>
+    <article className={`prod ${faded || outOfStock ? 'faded' : ''}`}>
       <div className="prod-head">
         <div className="prod-title">
           {p.name}
           <div className="prod-brand">
             {p.brand} · {p.format} · <span className="store-pill">{p.store}</span>
+            <span style={{ marginLeft: 6 }}>
+              <StockBadge inStock={p.inStock} />
+            </span>
           </div>
         </div>
         <div className={`prod-kg ${p.bestPricePerKg < 5500 ? 'ok' : 'no'}`}>
@@ -169,7 +196,7 @@ h2 { font-size: 12px; margin: 24px 0 10px; color: var(--muted); font-weight: 600
 .hero { background: var(--good-bg); border: 1px solid var(--good-border); border-radius: 14px; padding: 18px; margin-bottom: 18px; }
 .tag { display: inline-block; background: var(--good); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em; margin-bottom: 10px; }
 .hero-name { font-size: 17px; font-weight: 600; color: #064e3b; line-height: 1.3; }
-.hero-brand { font-size: 13px; color: #047857; margin-top: 4px; }
+.hero-brand { font-size: 13px; color: #047857; margin-top: 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .hero-brand .store { background: rgba(5,150,105,0.15); padding: 2px 7px; border-radius: 4px; font-weight: 600; }
 .hero-price { font-size: 32px; font-weight: 800; color: var(--good); letter-spacing: -0.02em; margin: 10px 0 4px; }
 .hero-price .unit { font-size: 14px; color: #064e3b; font-weight: 500; }
@@ -177,11 +204,15 @@ h2 { font-size: 12px; margin: 24px 0 10px; color: var(--muted); font-weight: 600
 .hero-cta:hover { text-decoration: none; background: #047857; }
 .prod-list { display: flex; flex-direction: column; gap: 10px; }
 .prod { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; box-shadow: var(--shadow); }
-.prod.faded { opacity: 0.7; }
+.prod.faded { opacity: 0.55; }
 .prod-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
 .prod-title { font-weight: 600; font-size: 15px; line-height: 1.3; flex: 1; min-width: 0; }
-.prod-brand { color: var(--muted); font-size: 12px; font-weight: 500; margin-top: 2px; }
+.prod-brand { color: var(--muted); font-size: 12px; font-weight: 500; margin-top: 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .store-pill { background: var(--card-hi); padding: 1px 6px; border-radius: 4px; font-weight: 600; color: var(--text); }
+.stock-badge { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; }
+.stock-ok { background: #d1fae5; color: #065f46; }
+.stock-no { background: #fee2e2; color: #991b1b; }
+.stock-unk { background: #f3f4f6; color: #6b7280; }
 .prod-kg { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
 .prod-kg.ok { color: var(--good); }
 .prod-kg.no { color: var(--bad); }
@@ -195,7 +226,7 @@ h2 { font-size: 12px; margin: 24px 0 10px; color: var(--muted); font-weight: 600
 .prod-link:hover { text-decoration: none; background: #1d4ed8; }
 .empty { background: var(--card); border: 1px dashed var(--border); border-radius: 12px; padding: 24px; text-align: center; color: var(--muted); font-size: 14px; }
 .stores { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-.store-row { display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 13px; }
+.store-row { display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 13px; gap: 8px; }
 .store-row:last-child { border-bottom: none; }
 .store-row.err .err-text { color: var(--warn); font-size: 12px; }
 .store-name { font-weight: 600; }
