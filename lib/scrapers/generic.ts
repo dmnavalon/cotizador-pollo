@@ -51,14 +51,9 @@ function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Pr
   if (!c.price || !c.weight || c.weight <= 0) return null;
 
   const pricePerKg = Math.round(c.price / c.weight);
-  if (pricePerKg < 1000 || pricePerKg > 50000) return null; // outliers absurdos
+  if (pricePerKg < 1000 || pricePerKg > 50000) return null;
 
-  const tier: PriceTier = {
-    minQty: 1,
-    unitPrice: c.price,
-    pricePerKg,
-    label: 'regular',
-  };
+  const tier: PriceTier = { minQty: 1, unitPrice: c.price, pricePerKg, label: 'regular' };
 
   let url = c.url;
   if (url.startsWith('/')) url = baseUrl.replace(/\/$/, '') + url;
@@ -76,6 +71,7 @@ function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Pr
     tiers: [tier],
     bestPricePerKg: pricePerKg,
     ean: c.ean || null,
+    inStock: null,
   };
 }
 
