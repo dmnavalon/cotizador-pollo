@@ -2,8 +2,7 @@ name: Scrape semanal
 
 on:
   schedule:
-    # Lunes 02:00 UTC = Domingo 22:00 hora Chile (CLT, abril–septiembre)
-    # En CLST (septiembre–abril, UTC-3) corre Domingo 23:00 hora Chile.
+    # Lunes 02:00 UTC = Domingo 22:00 hora Chile (CLT)
     - cron: '0 2 * * 1'
   workflow_dispatch:
     inputs:
@@ -14,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: scrape
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,15 +42,20 @@ jobs:
       - name: Correr scrape
         run: npm run scrape:full
 
+      - name: Auto-healing (issues GH)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/self-heal.ts
+
       - name: Commitear y pushear snapshot
         run: |
           git config user.name "cotizador-bot"
           git config user.email "bot@cotizador-pollo.vercel.app"
-          if ! git diff --quiet data/products.json; then
-            git add data/products.json
+          git add data/products.json data/history.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
             git commit -m "chore: scrape automático $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
-            echo "✓ Snapshot actualizado y pusheado"
+            echo "✓ Snapshot + history actualizados"
           else
-            echo "Sin cambios en data/products.json"
+            echo "Sin cambios"
           fi
