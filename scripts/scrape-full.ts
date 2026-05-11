@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { scrapeAlvi } from '../lib/scrapers/alvi';
+import { scrapePollosRo } from '../lib/scrapers/pollos-ro';
 import { scrapeSite as scrapeSiteFetch } from '../lib/scrapers/generic';
 import { scrapeSiteWithPlaywright } from '../lib/scrapers/playwright-engine';
 import { sortByStockThenPrice } from '../lib/scrape';
@@ -17,8 +18,9 @@ async function main() {
   const scrapes: ScrapeResult[] = [];
 
   for (const site of active) {
-    const tag = site.id === 'alvi'
-      ? 'fetch-dedicado'
+    const dedicated = ['alvi', 'pollosro-cl'].includes(site.id);
+    const tag = dedicated
+      ? 'dedicado'
       : site.needsChromium
         ? 'playwright'
         : 'fetch-genérico+fallback';
@@ -32,6 +34,8 @@ async function main() {
           console.log(`    fetch sin resultados, fallback a Playwright…`);
           res = await scrapeSiteWithPlaywright(site);
         }
+      } else if (site.id === 'pollosro-cl') {
+        res = await scrapePollosRo(true);
       } else if (site.needsChromium) {
         res = await scrapeSiteWithPlaywright(site);
       } else {
