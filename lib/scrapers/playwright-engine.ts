@@ -181,19 +181,69 @@ async function newPage(browser: Browser): Promise<Page> {
   return ctx.newPage();
 }
 
-async function waitForHydration(page: Page, timeoutMs = 15000): Promise<void> {
+async function waitForHydration(page: Page, timeoutMs = 25000): Promise<void> {
   const start = Date.now();
-  // Esperar a que el contenido tenga al menos "pechuga" en algún lado o pasen 15s
   while (Date.now() - start < timeoutMs) {
     try {
       const hasContent = await page.evaluate(() => {
         const txt = document.body?.innerText || '';
-        return /pechuga/i.test(txt) || /\$\s?\d{2,}/.test(txt);
+        // Requiere precio + nombre de producto en el mismo body
+        return /pechuga/i.test(txt) && /\$\s?\d{2,}/.test(txt);
       });
       if (hasContent) return;
     } catch {}
     await page.waitForTimeout(800);
   }
+}
+
+/** Espera a que la página pase el challenge de Cloudflare y muestre contenido real. */
+async function passCloudflare(page: Page, maxWaitMs = 30000): Promise<boolean> {
+  const start = Date.now();
+  while (Date.now() - start < maxWaitMs) {
+    const title = await page.title().catch(() => '');
+    const url = page.url();
+    if (!/just a moment|cloudflare|attention required|verificando/i.test(title) && !/__cf_chl_/.test(url)) {
+      return true;
+    }
+    await page.waitForTimeout(2000);
+  }
+  return false;
+}
+
+async function tryExtractFromWindowGlobals(page: Page, allCandidates: RawCandidate[], seen: Set<string>): Promise<number> {
+  // Algunos sitios (VTEX, Apollo, Magento) exponen el state en window.*
+  const data = await page
+    .evaluate(() => {
+      const w = window as any;
+      const candidates = [
+        w.__INITIAL_STATE__,
+        w.__APOLLO_STATE__,
+        w.__PRELOADED_STATE__,
+        w.__INITIAL_DATA__,
+        w.__REDUX_STATE__,
+        w.dataLayer,
+      ].filter(Boolean);
+      try {
+        return JSON.parse(JSON.stringify(candidates));
+      } catch {
+        return [];
+      }
+    })
+    .catch(() => []);
+
+  let added = 0;
+  for (const blob of data) {
+    const arr = deepFindProducts(blob);
+    for (const r of arr) {
+      const c = normalizeNextProduct(r);
+      if (c && !seen.has(c.url || c.name)) {
+        seen.add(c.url || c.name);
+        allCandidates.push(c);
+        added++;
+      }
+    }
+  }
+  return added;
 }
 
 async function tryExtractFromNextData(page: Page, allCandidates: RawCandidate[], seen: Set<string>): Promise<number> {
@@ -288,31 +338,49 @@ export async function scrapeSiteWithPlaywright(site: SiteConfig, verbose = true)
         const url = site.searchUrlTemplate.replace('{q}', encodeURIComponent(query));
         if (verbose) console.log(`      [${site.name}] → ${url}`);
         try {
-          await page.goto(url, { timeout: 35000, waitUntil: 'domcontentloaded' });
+          await page.goto(url, { timeout: 45000, waitUntil: 'domcontentloaded' });
           await page.waitForTimeout(3000);
 
-          // Si hay challenge de Cloudflare, esperar
-          const title = await page.title().catch(() => '');
-          if (/just a moment|cloudflare|attention required/i.test(title)) {
-            if (verbose) console.log(`      [${site.name}] Cloudflare challenge detectado, esperando…`);
-            await page.waitForTimeout(8000);
-          }
+          // Pasar Cloudflare con paciencia
+          const passed = await passCloudflare(page, 30000);
+          if (verbose && !passed) console.log(`      [${site.name}] ⚠ Cloudflare no pasó tras 30s`);
 
-          await waitForHydration(page, 15000);
+          await waitForHydration(page, 25000);
 
-          // Scroll para gatillar lazy-loading
-          for (let i = 0; i < 3; i++) {
-            try { await page.mouse.wheel(0, 1500); } catch {}
+          // Scroll repetido para lazy loading
+          for (let i = 0; i < 5; i++) {
+            try { await page.mouse.wheel(0, 1800); } catch {}
             await page.waitForTimeout(1200);
           }
+
+          // Esperar a que aparezca CUALQUIER patrón común de tarjeta de producto
+          await page
+            .waitForSelector(
+              [
+                '[class*="ProductSummary"]',
+                '[class*="product-summary"]',
+                '[class*="product-card"]',
+                '[class*="ProductCard"]',
+                '[data-tag="product-summary"]',
+                'a[href*="/p/"]',
+                'article.product',
+                'li.product',
+              ].join(','),
+              { timeout: 8000, state: 'attached' }
+            )
+            .catch(() => {});
 
           const nextAdded = await tryExtractFromNextData(page, allCandidates, seen);
           if (verbose) console.log(`      [${site.name}] __NEXT_DATA__: +${nextAdded} candidatos`);
 
+          // Probar también ventanas globales (__INITIAL_STATE__, __APOLLO_STATE__, etc)
           if (nextAdded === 0) {
-            const domAdded = await tryExtractFromDom(page, allCandidates, seen);
-            if (verbose) console.log(`      [${site.name}] DOM scan: +${domAdded} candidatos`);
+            const globalsAdded = await tryExtractFromWindowGlobals(page, allCandidates, seen);
+            if (verbose) console.log(`      [${site.name}] window globals: +${globalsAdded} candidatos`);
           }
+
+          const domAdded = await tryExtractFromDom(page, allCandidates, seen);
+          if (verbose) console.log(`      [${site.name}] DOM scan: +${domAdded} candidatos`);
         } catch (e) {
           if (verbose) console.log(`      [${site.name}] error en ${url}: ${(e as Error).message}`);
         } finally {
