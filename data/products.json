@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T04:17:48.250Z",
+  "updatedAt": "2026-05-11T05:53:30.813Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -111,27 +111,6 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-10254",
-          "name": "Pechuga pollo deshuesada Sadía congelada 1 Kg Pechuga deshuesada de pollo congelada bolsa",
-          "brand": "Sadia",
-          "format": "1 kg",
-          "weightKg": 1,
-          "url": "https://www.alvi.cl/pechuga-deshuesada-sadia-iqf-1-kg",
-          "image": "https://alvicl.vtexassets.com/arquivos/ids/166752/000000000000651901-UN-01.jpg?v=638993293481830000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 4990,
-              "pricePerKg": 4990,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4990,
-          "ean": "7891515551995",
-          "inStock": true
-        },
-        {
-          "store": "Alvi",
           "id": "alvi-10404",
           "name": "Pechuga de pollo deshuesada congelada",
           "brand": "Fundo Rio Alegre",
@@ -149,6 +128,27 @@
           ],
           "bestPricePerKg": 5553,
           "ean": "7894904282890",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-10254",
+          "name": "Pechuga pollo deshuesada Sadía congelada 1 Kg Pechuga deshuesada de pollo congelada bolsa",
+          "brand": "Sadia",
+          "format": "1 kg",
+          "weightKg": 1,
+          "url": "https://www.alvi.cl/pechuga-deshuesada-sadia-iqf-1-kg",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/166752/000000000000651901-UN-01.jpg?v=638993293481830000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4990,
+              "pricePerKg": 4990,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4990,
+          "ean": "7891515551995",
           "inStock": true
         },
         {
@@ -279,27 +279,6 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-pechuga-deshuesada-sadia-iqf-1-kg",
-          "name": "Sadia Pechuga pollo deshuesada sad... 1 Kg Precio socio Desde 2 un",
-          "brand": "Sin marca",
-          "format": "1 kg",
-          "weightKg": 1,
-          "url": "https://www.alvi.cl/product/pechuga-deshuesada-sadia-iqf-1-kg",
-          "image": null,
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 4990,
-              "pricePerKg": 4990,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4990,
-          "ean": null,
-          "inStock": null
-        },
-        {
-          "store": "Alvi",
           "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
           "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
           "brand": "Sin marca",
@@ -318,10 +297,31 @@
           "bestPricePerKg": 5553,
           "ean": null,
           "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-pechuga-deshuesada-sadia-iqf-1-kg",
+          "name": "Sadia Pechuga pollo deshuesada sad... 1 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "1 kg",
+          "weightKg": 1,
+          "url": "https://www.alvi.cl/product/pechuga-deshuesada-sadia-iqf-1-kg",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4990,
+              "pricePerKg": 4990,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4990,
+          "ean": null,
+          "inStock": null
         }
       ],
       "error": null,
-      "durationMs": 62422
+      "durationMs": 60486
     },
     {
       "store": "Jumbo",
@@ -1042,25 +1042,25 @@
         }
       ],
       "error": null,
-      "durationMs": 2705
+      "durationMs": 1280
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 73297
+      "durationMs": 72165
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 18376
+      "durationMs": 18447
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 30702
+      "durationMs": 29606
     },
     {
       "store": "Pollos RO",
@@ -1319,7 +1319,7 @@
         }
       ],
       "error": null,
-      "durationMs": 391
+      "durationMs": 237
     },
     {
       "store": "El Carnicero",
@@ -1410,7 +1410,7 @@
         }
       ],
       "error": null,
-      "durationMs": 41332
+      "durationMs": 42461
     }
   ],
   "allProducts": [

@@ -2,14 +2,14 @@
   "health": {
     "Alvi": {
       "store": "Alvi",
-      "lastSuccessAt": "2026-05-11T04:17:48.250Z",
+      "lastSuccessAt": "2026-05-11T05:53:30.813Z",
       "lastSuccessCount": 15,
       "consecutiveZeros": 0,
       "lastError": null
     },
     "Jumbo": {
       "store": "Jumbo",
-      "lastSuccessAt": "2026-05-11T04:17:48.250Z",
+      "lastSuccessAt": "2026-05-11T05:53:30.813Z",
       "lastSuccessCount": 34,
       "consecutiveZeros": 0,
       "lastError": null
@@ -18,33 +18,33 @@
       "store": "Lider",
       "lastSuccessAt": null,
       "lastSuccessCount": 0,
-      "consecutiveZeros": 2,
+      "consecutiveZeros": 3,
       "lastError": "Playwright sin productos válidos"
     },
     "Tottus": {
       "store": "Tottus",
       "lastSuccessAt": null,
       "lastSuccessCount": 0,
-      "consecutiveZeros": 2,
+      "consecutiveZeros": 3,
       "lastError": "Playwright sin productos válidos"
     },
     "Agrosuper Ventas Online": {
       "store": "Agrosuper Ventas Online",
       "lastSuccessAt": null,
       "lastSuccessCount": 0,
-      "consecutiveZeros": 2,
+      "consecutiveZeros": 3,
       "lastError": "Playwright sin productos válidos"
     },
     "Pollos RO": {
       "store": "Pollos RO",
-      "lastSuccessAt": "2026-05-11T04:17:48.250Z",
+      "lastSuccessAt": "2026-05-11T05:53:30.813Z",
       "lastSuccessCount": 12,
       "consecutiveZeros": 0,
       "lastError": null
     },
     "El Carnicero": {
       "store": "El Carnicero",
-      "lastSuccessAt": "2026-05-11T04:17:48.250Z",
+      "lastSuccessAt": "2026-05-11T05:53:30.813Z",
       "lastSuccessCount": 4,
       "consecutiveZeros": 0,
       "lastError": null
