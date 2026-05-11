@@ -46,6 +46,12 @@ async function main() {
     try {
       if (typeof dedicated === 'function') {
         res = await dedicated(true);
+        // Si el dedicado falla (rate-limit, bloqueo, etc.), probar Playwright genérico
+        if (res.products.length === 0) {
+          console.log(`    dedicado sin resultados, fallback a Playwright genérico…`);
+          const fallback = await scrapeSiteWithPlaywright(site);
+          if (fallback.products.length > 0) res = fallback;
+        }
       } else if (site.needsChromium) {
         res = await scrapeSiteWithPlaywright(site);
       } else {
