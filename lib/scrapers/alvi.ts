@@ -75,6 +75,10 @@ function toProduct(p: AlviProduct): Product | null {
   if (tiers.length === 0) return null;
   const bestPricePerKg = Math.min(...tiers.map((t) => t.pricePerKg).filter((n) => n > 0));
 
+  // Stock: VTEX expone availableQuantity en cada seller. > 0 = en stock.
+  const availableQty = (seller as any)?.availableQuantity;
+  const inStock = typeof availableQty === 'number' ? availableQty > 0 : null;
+
   return {
     store: 'Alvi',
     id: `alvi-${p.productId}`,
@@ -87,6 +91,7 @@ function toProduct(p: AlviProduct): Product | null {
     tiers,
     bestPricePerKg,
     ean: p.ean || null,
+    inStock,
   };
 }
 

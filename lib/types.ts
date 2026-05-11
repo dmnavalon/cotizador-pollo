@@ -17,6 +17,13 @@ export interface Product {
   tiers: PriceTier[];
   bestPricePerKg: number;
   ean: string | null;
+  /**
+   * Estado de stock detectado del scraper.
+   *  - true: stock confirmado
+   *  - false: sin stock confirmado
+   *  - null: no se pudo determinar
+   */
+  inStock: boolean | null;
 }
 
 export interface ScrapeResult {
@@ -34,35 +41,18 @@ export interface DataSnapshot {
   totalProducts: number;
 }
 
-/**
- * Configuración de un sitio en el registro editable por el usuario.
- * El scraper genérico intenta detectar productos automáticamente, pero el
- * usuario puede sobreescribir patrones manualmente si la auto-detección falla.
- */
 export interface SiteConfig {
-  /** Identificador interno único (slug) */
   id: string;
-  /** Nombre legible (ej: "Alvi", "Don Pollo") */
   name: string;
-  /** URL base del sitio */
   baseUrl: string;
-  /** URL de búsqueda. {q} se reemplaza por el término. */
   searchUrlTemplate: string;
-  /** Términos de búsqueda a usar */
   queries: string[];
-  /** Estrategia de parseo detectada/configurada */
   strategy: 'next_data' | 'jsonld' | 'microdata' | 'custom' | 'unknown';
-  /** JSON path dentro de __NEXT_DATA__ donde están los productos (si aplica) */
   nextDataPath?: string;
-  /** Selector CSS de la tarjeta de producto (si custom) */
   productSelector?: string;
-  /** Si el sitio está activo en la rotación de scraping */
   enabled: boolean;
-  /** Si requiere Chromium (no soportado en Hobby) */
   needsChromium: boolean;
-  /** Notas del usuario */
   notes?: string;
-  /** Última vez que se logró scrapear con éxito */
   lastSuccessfulScrape?: string;
 }
 
