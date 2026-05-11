@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T03:40:08.241Z",
+  "updatedAt": "2026-05-11T03:51:47.946Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -132,6 +132,48 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+          "name": "Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/product/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 29290,
+              "pricePerKg": 6509,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 6509,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-pechuga-deshuesado-super-pollo-congelado-750-gr",
+          "name": "Super Pollo Pechuga deshuesado super pol... 750 g Precio socio Desde 3 un",
+          "brand": "Sin marca",
+          "format": "750 g",
+          "weightKg": 0.75,
+          "url": "https://www.alvi.cl/product/pechuga-deshuesado-super-pollo-congelado-750-gr",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4920,
+              "pricePerKg": 6560,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 6560,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
           "name": "Insuperables Quesos, Cecinas y Congelados Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
           "brand": "Sin marca",
@@ -174,22 +216,22 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-          "name": "Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
+          "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
+          "name": "Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
           "brand": "Sin marca",
-          "format": "4.5 kg",
-          "weightKg": 4.5,
-          "url": "https://www.alvi.cl/product/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+          "format": "700 g",
+          "weightKg": 0.7,
+          "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
           "image": null,
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 29290,
-              "pricePerKg": 6509,
+              "unitPrice": 4550,
+              "pricePerKg": 6500,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6509,
+          "bestPricePerKg": 6500,
           "ean": null,
           "inStock": null
         },
@@ -216,37 +258,290 @@
         }
       ],
       "error": null,
-      "durationMs": 29517
+      "durationMs": 85829
     },
     {
       "store": "Jumbo",
       "products": [],
       "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 30705
+      "durationMs": 45712
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 25266
+      "durationMs": 46208
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 9599
+      "durationMs": 44610
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 25386
+      "durationMs": 97301
     },
     {
       "store": "Pollos RO",
-      "products": [],
-      "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 20251
+      "products": [
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-1765",
+          "name": "6 kg Pechuga de Pollo Organica 💪🐔",
+          "brand": "Pollos RO",
+          "format": "6 kg",
+          "weightKg": 6,
+          "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 40000,
+              "pricePerKg": 6667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 6667,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-1775",
+          "name": "12 kg Pechuga de Pollo Organica 💪🐔",
+          "brand": "Pollos RO",
+          "format": "12 kg",
+          "weightKg": 12,
+          "url": "https://www.pollosro.cl/tienda/pollo/12-kg-pechuga-de-pollo-organica/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 66000,
+              "pricePerKg": 5500,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 5500,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-1776",
+          "name": "15 kg Pechuga de Pollo Organica 🐔💪",
+          "brand": "Pollos RO",
+          "format": "15 kg",
+          "weightKg": 15,
+          "url": "https://www.pollosro.cl/tienda/pollo/15-kg-pechuga-de-pollo-organica/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-3.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 80000,
+              "pricePerKg": 5333,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 5333,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-19101",
+          "name": "PROMO GYMBOX-6: 15 kg Pechuga de Pollo Organica + 90 Huevos de campo Tamaño Extra – 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "15 kg",
+          "weightKg": 15,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox6-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2023/06/267468825_6684320634972476_1816296834940399013_n.jpg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 112000,
+              "pricePerKg": 7467,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 7467,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-17626",
+          "name": "PROMO GYMBOX-4: 12 kg Pechuga de Pollo Organica + 180 Huevos de campo  Tamaño Extra – 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "12 kg",
+          "weightKg": 12,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox4-12-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo-1.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 116000,
+              "pricePerKg": 9667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 9667,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-17496",
+          "name": "PROMO GYMBOX-2: 6 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra – 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "6 kg",
+          "weightKg": 6,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox2-6-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 90000,
+              "pricePerKg": 15000,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 15000,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-17493",
+          "name": "PROMO GYMBOX-3: 12 kg Pechuga de Pollo Organica + 90 Huevos de campo  Tamaño Extra – 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "12 kg",
+          "weightKg": 12,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox3-12-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 96000,
+              "pricePerKg": 8000,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 8000,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-17491",
+          "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
+          "brand": "Pollos RO",
+          "format": "15 kg",
+          "weightKg": 15,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 190000,
+              "pricePerKg": 12667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 12667,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-15700",
+          "name": "PROMO GYMPRO1: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo – Tamaño Extra + 5 kg Churrasco Posta Rosada – 🐔+🥚+🥩",
+          "brand": "Pollos RO",
+          "format": "15 kg",
+          "weightKg": 15,
+          "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro1-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-churrasco-posta-rosada/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Churrasco-Posta-y-Huevos-de-Campo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 190000,
+              "pricePerKg": 12667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 12667,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-15697",
+          "name": "PROMO GYMBOX-1: 6 kg Pechuga de Pollo Organica + 90 Huevos de campo – Tamaño Extra 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "6 kg",
+          "weightKg": 6,
+          "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox1-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 70000,
+              "pricePerKg": 11667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 11667,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-2886",
+          "name": "3 kg Pechuga de Pollo Organica 🐔💪",
+          "brand": "Pollos RO",
+          "format": "3 kg",
+          "weightKg": 3,
+          "url": "https://www.pollosro.cl/tienda/pollo/3-kg-pechuga-de-pollo-organica/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-1.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 24000,
+              "pricePerKg": 8000,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 8000,
+          "ean": null,
+          "inStock": true
+        },
+        {
+          "store": "Pollos RO",
+          "id": "pollos-ro-1846",
+          "name": "PROMO GYMBOX-5: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo (L) – 🐔+🥚",
+          "brand": "Pollos RO",
+          "format": "15 kg",
+          "weightKg": 15,
+          "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox5-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pollo-Huevo.jpeg",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 130000,
+              "pricePerKg": 8667,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 8667,
+          "ean": null,
+          "inStock": true
+        }
+      ],
+      "error": null,
+      "durationMs": 1329
     },
     {
       "store": "El Carnicero",
@@ -337,7 +632,7 @@
         }
       ],
       "error": null,
-      "durationMs": 22186
+      "durationMs": 43138
     }
   ],
   "allProducts": [
@@ -405,6 +700,48 @@
       "inStock": true
     },
     {
+      "store": "Pollos RO",
+      "id": "pollos-ro-1776",
+      "name": "15 kg Pechuga de Pollo Organica 🐔💪",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/pollo/15-kg-pechuga-de-pollo-organica/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-3.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 80000,
+          "pricePerKg": 5333,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 5333,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-1775",
+      "name": "12 kg Pechuga de Pollo Organica 💪🐔",
+      "brand": "Pollos RO",
+      "format": "12 kg",
+      "weightKg": 12,
+      "url": "https://www.pollosro.cl/tienda/pollo/12-kg-pechuga-de-pollo-organica/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 66000,
+          "pricePerKg": 5500,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 5500,
+      "ean": null,
+      "inStock": true
+    },
+    {
       "store": "Alvi",
       "id": "alvi-3146",
       "name": "Filetitos de pechuga de pollo congelado",
@@ -465,6 +802,216 @@
       ],
       "bestPricePerKg": 6560,
       "ean": "7809611722034",
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-1765",
+      "name": "6 kg Pechuga de Pollo Organica 💪🐔",
+      "brand": "Pollos RO",
+      "format": "6 kg",
+      "weightKg": 6,
+      "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 40000,
+          "pricePerKg": 6667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-19101",
+      "name": "PROMO GYMBOX-6: 15 kg Pechuga de Pollo Organica + 90 Huevos de campo Tamaño Extra – 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox6-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2023/06/267468825_6684320634972476_1816296834940399013_n.jpg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 112000,
+          "pricePerKg": 7467,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 7467,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-17493",
+      "name": "PROMO GYMBOX-3: 12 kg Pechuga de Pollo Organica + 90 Huevos de campo  Tamaño Extra – 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "12 kg",
+      "weightKg": 12,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox3-12-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 96000,
+          "pricePerKg": 8000,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 8000,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-2886",
+      "name": "3 kg Pechuga de Pollo Organica 🐔💪",
+      "brand": "Pollos RO",
+      "format": "3 kg",
+      "weightKg": 3,
+      "url": "https://www.pollosro.cl/tienda/pollo/3-kg-pechuga-de-pollo-organica/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-1.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 24000,
+          "pricePerKg": 8000,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 8000,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-1846",
+      "name": "PROMO GYMBOX-5: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo (L) – 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox5-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pollo-Huevo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 130000,
+          "pricePerKg": 8667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 8667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-17626",
+      "name": "PROMO GYMBOX-4: 12 kg Pechuga de Pollo Organica + 180 Huevos de campo  Tamaño Extra – 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "12 kg",
+      "weightKg": 12,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox4-12-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo-1.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 116000,
+          "pricePerKg": 9667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 9667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-15697",
+      "name": "PROMO GYMBOX-1: 6 kg Pechuga de Pollo Organica + 90 Huevos de campo – Tamaño Extra 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "6 kg",
+      "weightKg": 6,
+      "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox1-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 70000,
+          "pricePerKg": 11667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 11667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-17491",
+      "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 190000,
+          "pricePerKg": 12667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 12667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-15700",
+      "name": "PROMO GYMPRO1: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo – Tamaño Extra + 5 kg Churrasco Posta Rosada – 🐔+🥚+🥩",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro1-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-churrasco-posta-rosada/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Churrasco-Posta-y-Huevos-de-Campo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 190000,
+          "pricePerKg": 12667,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 12667,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-17496",
+      "name": "PROMO GYMBOX-2: 6 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra – 🐔+🥚",
+      "brand": "Pollos RO",
+      "format": "6 kg",
+      "weightKg": 6,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox2-6-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 90000,
+          "pricePerKg": 15000,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 15000,
+      "ean": null,
       "inStock": true
     },
     {
@@ -532,6 +1079,27 @@
     },
     {
       "store": "Alvi",
+      "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
+      "name": "Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+      "brand": "Sin marca",
+      "format": "700 g",
+      "weightKg": 0.7,
+      "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4550,
+          "pricePerKg": 6500,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6500,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
       "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
       "name": "Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
       "brand": "Sin marca",
@@ -548,6 +1116,27 @@
         }
       ],
       "bestPricePerKg": 6509,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-pechuga-deshuesado-super-pollo-congelado-750-gr",
+      "name": "Super Pollo Pechuga deshuesado super pol... 750 g Precio socio Desde 3 un",
+      "brand": "Sin marca",
+      "format": "750 g",
+      "weightKg": 0.75,
+      "url": "https://www.alvi.cl/product/pechuga-deshuesado-super-pollo-congelado-750-gr",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4920,
+          "pricePerKg": 6560,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6560,
       "ean": null,
       "inStock": null
     },
@@ -657,5 +1246,5 @@
     "ean": "7891515623029",
     "inStock": true
   },
-  "totalProducts": 14
+  "totalProducts": 28
 }
