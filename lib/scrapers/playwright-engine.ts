@@ -43,6 +43,7 @@ interface RawCandidate {
   brand?: string;
   ean?: string;
   productId?: string;
+  inStock?: boolean | null;
 }
 
 function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Product | null {
@@ -68,6 +69,7 @@ function candidateToProduct(c: RawCandidate, store: string, baseUrl: string): Pr
     tiers: [tier],
     bestPricePerKg: pricePerKg,
     ean: c.ean || null,
+    inStock: c.inStock ?? null,
   };
 }
 
@@ -119,6 +121,16 @@ function normalizeNextProduct(raw: any): RawCandidate | null {
   if (!weight) return null;
   let url = raw.detailUrl || raw.url || raw.link || raw.linkText || '';
   if (url.endsWith('/p')) url = url.slice(0, -2);
+  // Stock: VTEX / muchos JSON exponen availableQuantity en sellers
+  let inStock: boolean | null = null;
+  const seller0 = raw.sellers?.[0];
+  if (seller0 && typeof seller0.availableQuantity === 'number') {
+    inStock = seller0.availableQuantity > 0;
+  } else if (typeof raw.availability === 'string') {
+    inStock = /in.?stock|available|disponible/i.test(raw.availability);
+  } else if (typeof raw.inStock === 'boolean') {
+    inStock = raw.inStock;
+  }
   return {
     name,
     url,
@@ -128,6 +140,7 @@ function normalizeNextProduct(raw: any): RawCandidate | null {
     brand: raw.brand,
     ean: raw.ean,
     productId: raw.productId || raw.itemId || raw.sku,
+    inStock,
   };
 }
 
@@ -225,7 +238,20 @@ async function tryExtractFromDom(page: Page, allCandidates: RawCandidate[], seen
         (el as HTMLElement).closest('a')?.getAttribute('href') ||
         el.querySelector('a')?.getAttribute('href') ||
         '';
-      out.push({ text: txt.replace(/\s+/g, ' ').slice(0, 400), href: link });
+      // Detección de stock: clases comunes + texto
+      const cls = ((el as HTMLElement).className || '') + ' ' + (el.querySelector('[class*="stock"], [class*="availab"]')?.className || '');
+      let stockHint: string | null = null;
+      if (/\bout[-_ ]?of[-_ ]?stock\b/i.test(cls) || /sold[-_ ]?out/i.test(cls)) stockHint = 'out';
+      else if (/\bin[-_ ]?stock\b/i.test(cls) || /availability[-_ ]?in/i.test(cls)) stockHint = 'in';
+      if (!stockHint) {
+        if (/(agotado|sin stock|no disponible|out of stock|sold out)/i.test(txt)) stockHint = 'out';
+        else if (/(hay stock|en stock|disponible|in stock|agregar al carrito|add to cart)/i.test(txt)) stockHint = 'in';
+      }
+      out.push({
+        text: txt.replace(/\s+/g, ' ').slice(0, 400),
+        href: link,
+        stockHint,
+      });
       if (out.length >= 25) break;
     }
     return out;
@@ -240,7 +266,10 @@ async function tryExtractFromDom(page: Page, allCandidates: RawCandidate[], seen
     if (!weight) continue;
     if (!seen.has(card.href || name)) {
       seen.add(card.href || name);
-      allCandidates.push({ name, url: card.href, price, weight });
+      let inStock: boolean | null = null;
+      if (card.stockHint === 'in') inStock = true;
+      else if (card.stockHint === 'out') inStock = false;
+      allCandidates.push({ name, url: card.href, price, weight, inStock });
       added++;
     }
   }
