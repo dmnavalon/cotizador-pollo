@@ -45,7 +45,7 @@ function isPechugaDeshuesada(name: string): boolean {
   const n = name.toLowerCase();
   if (!n.includes('pechuga')) return false;
   if (!/(deshues|fil[eé]|sin hueso)/i.test(n)) return false;
-  if (/(apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
+  if (/(pavo|apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
   return true;
 }
 
@@ -86,7 +86,7 @@ function toProduct(p: AlviProduct): Product | null {
     brand: p.brand || 'Sin marca',
     format: p.format,
     weightKg: p.unitMultiplierUn,
-    url: `${ALVI_BASE}${p.detailUrl.replace(/\/p$/, '')}`,
+    url: `${ALVI_BASE}/product/${p.detailUrl.replace(/^\//, '').replace(/\/p$/, '')}`,
     image: p.images?.[0] || null,
     tiers,
     bestPricePerKg,

@@ -41,7 +41,7 @@ function isPechugaDeshuesada(name: string): boolean {
   const n = name.toLowerCase();
   if (!n.includes('pechuga')) return false;
   if (!/(deshues|fil[eé]|sin hueso)/i.test(n)) return false;
-  if (/(apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
+  if (/(pavo|apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
   return true;
 }
 
@@ -83,20 +83,27 @@ export async function scrapeJumbo(verbose = false): Promise<ScrapeResult> {
       const price = offer.Price || offer.ListPrice || 0;
       if (!price) continue;
 
-      // Peso: VTEX expone unitMultiplier en kg si measurementUnit === 'kg'
-      let weight: number | null = null;
+      // Precio/peso: para productos por kg (measurementUnit === 'kg'), VTEX entrega
+      // Price COMO precio por kilo y unitMultiplier = peso aprox del paquete. Para
+      // productos por unidad, Price es el precio del paquete y el peso sale del nombre.
+      let weight: number | null;
+      let pricePerKg: number;
+      let unitPrice: number;
       if (item.measurementUnit?.toLowerCase() === 'kg' && item.unitMultiplier) {
         weight = item.unitMultiplier;
+        pricePerKg = Math.round(price);
+        unitPrice = Math.round(price * weight);
+      } else {
+        weight = parseWeightKg(p.productName) || parseWeightKg(item.name);
+        if (!weight) continue;
+        pricePerKg = Math.round(price / weight);
+        unitPrice = price;
       }
-      if (!weight) weight = parseWeightKg(p.productName) || parseWeightKg(item.name);
-      if (!weight) continue;
-
-      const pricePerKg = Math.round(price / weight);
       if (pricePerKg < 1000 || pricePerKg > 50000) continue;
 
       const tier: PriceTier = {
         minQty: 1,
-        unitPrice: price,
+        unitPrice,
         pricePerKg,
         label: offer.PriceWithoutDiscount && offer.PriceWithoutDiscount > price ? 'oferta' : 'regular',
       };
