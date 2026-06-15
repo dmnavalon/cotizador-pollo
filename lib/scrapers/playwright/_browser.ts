@@ -73,7 +73,9 @@ export async function scrollFully(page: Page, steps = 6): Promise<void> {
 }
 
 export function clpToInt(s: string): number {
-  const m = s.match(/(\d{1,3}(?:[.,]\d{3})*|\d+)/);
+  // Solo cuenta como precio un monto con $ o con separador de miles / 4+ dígitos.
+  // Evita confundir un peso suelto ("750 g") con un precio ($750 no existe en pollo).
+  const m = s.match(/\$\s*(\d{1,3}(?:[.,]\d{3})+|\d{4,})/) || s.match(/(\d{1,3}(?:[.,]\d{3})+|\d{4,})/);
   if (!m) return 0;
   return parseInt(m[1].replace(/[.,]/g, ''), 10) || 0;
 }
@@ -91,6 +93,6 @@ export function isPechugaDeshuesada(name: string): boolean {
   const n = name.toLowerCase();
   if (!n.includes('pechuga')) return false;
   if (!/(deshues|fil[eé]|sin hueso)/i.test(n)) return false;
-  if (/(apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
+  if (/(pavo|apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
   return true;
 }
