@@ -10,6 +10,15 @@ function clp(n: number): string {
   return '$' + n.toLocaleString('es-CL');
 }
 
+// Tier con el menor precio/kg (el que define bestPricePerKg) — para mostrar el
+// precio y cantidad tal como aparecen en la tienda.
+function bestTier(p: any): { unitPrice: number; pricePerKg: number } {
+  const tiers = (p.tiers || []) as { unitPrice: number; pricePerKg: number }[];
+  const valid = tiers.filter((t) => t.pricePerKg > 0);
+  if (!valid.length) return { unitPrice: 0, pricePerKg: p.bestPricePerKg };
+  return valid.reduce((a, b) => (b.pricePerKg < a.pricePerKg ? b : a));
+}
+
 function formatRelative(iso: string): string {
   const date = new Date(iso);
   const diff = Date.now() - date.getTime();
@@ -82,13 +91,16 @@ export default function Home() {
           <div className="tag">★ MEJOR PRECIO {best.inStock === true ? 'CON STOCK' : ''}</div>
           <div className="hero-name">{best.name}</div>
           <div className="hero-brand">
-            {best.brand} · {best.format} · <span className="store">{best.store}</span>
+            {best.brand} · <span className="store">{best.store}</span>
             <span style={{ marginLeft: 8 }}>
               <StockBadge inStock={best.inStock} />
             </span>
           </div>
           <div className="hero-price">
             {clp(best.bestPricePerKg)} <span className="unit">/ kg</span>
+          </div>
+          <div className="hero-store">
+            En tienda: <b>{clp(bestTier(best).unitPrice)}</b> <span className="qty">× {best.format}</span>
           </div>
           <a href={best.url} target="_blank" rel="noopener" className="hero-cta">
             Ver en {best.store} →
@@ -169,7 +181,7 @@ function ProductCard({ p, faded }: { p: any; faded?: boolean }) {
         {tiers.map((t, i) => (
           <div key={i} className="tier">
             <span className="tier-label">{t.label}{t.minQty > 1 ? ` ${t.minQty}+` : ''}</span>
-            <span className="tier-price">{clp(t.unitPrice)}</span>
+            <span className="tier-price">{clp(t.unitPrice)} <small>× {p.format}</small></span>
             <span className="tier-kg">{clp(t.pricePerKg)}/kg</span>
           </div>
         ))}
@@ -198,8 +210,12 @@ h2 { font-size: 12px; margin: 24px 0 10px; color: var(--muted); font-weight: 600
 .hero-name { font-size: 17px; font-weight: 600; color: #064e3b; line-height: 1.3; }
 .hero-brand { font-size: 13px; color: #047857; margin-top: 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 .hero-brand .store { background: rgba(5,150,105,0.15); padding: 2px 7px; border-radius: 4px; font-weight: 600; }
-.hero-price { font-size: 32px; font-weight: 800; color: var(--good); letter-spacing: -0.02em; margin: 10px 0 4px; }
+.hero-price { font-size: 32px; font-weight: 800; color: var(--good); letter-spacing: -0.02em; margin: 10px 0 2px; }
 .hero-price .unit { font-size: 14px; color: #064e3b; font-weight: 500; }
+.hero-store { font-size: 14px; color: #047857; margin-bottom: 6px; }
+.hero-store b { font-weight: 700; }
+.hero-store .qty { color: #059669; }
+.tier-price small { color: var(--muted); font-weight: 400; }
 .hero-cta { display: block; background: var(--good); color: #fff; padding: 12px 16px; border-radius: 10px; font-weight: 700; font-size: 15px; text-align: center; margin-top: 10px; }
 .hero-cta:hover { text-decoration: none; background: #047857; }
 .prod-list { display: flex; flex-direction: column; gap: 10px; }

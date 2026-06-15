@@ -19,7 +19,7 @@ function isPechugaDeshuesada(name: string): boolean {
   const n = name.toLowerCase();
   if (!n.includes('pechuga')) return false;
   if (!/(deshues|fil[eé]|sin hueso|orga|trozad|porcion)/i.test(n)) return false;
-  if (/(apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
+  if (/(pavo|apan|cocid|hambur|nugget|breaded|empan)/i.test(n)) return false;
   return true;
 }
 
