@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T05:28:38.613Z",
+  "updatedAt": "2026-07-20T05:31:57.753Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -363,7 +363,7 @@
         }
       ],
       "error": null,
-      "durationMs": 63068
+      "durationMs": 61894
     },
     {
       "store": "Jumbo",
@@ -454,27 +454,6 @@
         },
         {
           "store": "Jumbo",
-          "id": "jumbo-88661",
-          "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
-          "brand": "Ariztía",
-          "format": "850 g",
-          "weightKg": 0.85,
-          "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/549921/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639010065270370000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 6490,
-              "pricePerKg": 7635,
-              "label": "oferta"
-            }
-          ],
-          "bestPricePerKg": 7635,
-          "ean": "7804115001739",
-          "inStock": true
-        },
-        {
-          "store": "Jumbo",
           "id": "jumbo-23970",
           "name": "Pechuga de Pollo Deshuesada Sin Piel Al Natural Super Pollo 780 g",
           "brand": "Super Pollo",
@@ -485,12 +464,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 7790,
-              "pricePerKg": 9987,
+              "unitPrice": 7990,
+              "pricePerKg": 10244,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 9987,
+          "bestPricePerKg": 10244,
           "ean": "7809611711656",
           "inStock": true
         },
@@ -506,12 +485,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 6020,
-              "pricePerKg": 10945,
+              "unitPrice": 6590,
+              "pricePerKg": 11982,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 10945,
+          "bestPricePerKg": 11982,
           "ean": "7804115002248",
           "inStock": true
         },
@@ -758,12 +737,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4290,
-              "pricePerKg": 8094,
+              "unitPrice": 3490,
+              "pricePerKg": 6585,
               "label": "oferta"
             }
           ],
-          "bestPricePerKg": 8094,
+          "bestPricePerKg": 6585,
           "ean": "7809611715029",
           "inStock": true
         },
@@ -874,27 +853,6 @@
         },
         {
           "store": "Jumbo",
-          "id": "jumbo-142988",
-          "name": "Pechuga Deshuesada Super Pollo Corte Bistec 530 g",
-          "brand": "Agrosuper",
-          "format": "530 g",
-          "weightKg": 0.53,
-          "url": "https://www.jumbo.cl/pechuga-desh-pollo-super-530-gr-pe-x12-2007916/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/338751/Pechuga-de-Pollo-Deshuesada-Super-Pollo-530-g-12-un.jpg?v=638776439532570000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 4890,
-              "pricePerKg": 9226,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 9226,
-          "ean": "2090001575278",
-          "inStock": false
-        },
-        {
-          "store": "Jumbo",
           "id": "jumbo-23908",
           "name": "Pechuga Entera Deshuesada Sopraval Granel",
           "brand": "Sopraval",
@@ -912,6 +870,27 @@
           ],
           "bestPricePerKg": 6390,
           "ean": "24051033",
+          "inStock": false
+        },
+        {
+          "store": "Jumbo",
+          "id": "jumbo-142988",
+          "name": "Pechuga Deshuesada Super Pollo Corte Bistec 530 g",
+          "brand": "Agrosuper",
+          "format": "530 g",
+          "weightKg": 0.53,
+          "url": "https://www.jumbo.cl/pechuga-desh-pollo-super-530-gr-pe-x12-2007916/p",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/338751/Pechuga-de-Pollo-Deshuesada-Super-Pollo-530-g-12-un.jpg?v=638776439532570000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4890,
+              "pricePerKg": 9226,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 9226,
+          "ean": "2090001575278",
           "inStock": false
         },
         {
@@ -955,28 +934,49 @@
           "bestPricePerKg": 4990,
           "ean": "2090001273372",
           "inStock": false
+        },
+        {
+          "store": "Jumbo",
+          "id": "jumbo-88661",
+          "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
+          "brand": "Ariztía",
+          "format": "850 g",
+          "weightKg": 0.85,
+          "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/549921/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639010065270370000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 6490,
+              "pricePerKg": 7635,
+              "label": "oferta"
+            }
+          ],
+          "bestPricePerKg": 7635,
+          "ean": "7804115001739",
+          "inStock": false
         }
       ],
       "error": null,
-      "durationMs": 1487
+      "durationMs": 1379
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 72636
+      "durationMs": 72049
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 19231
+      "durationMs": 20080
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 31239
+      "durationMs": 30993
     },
     {
       "store": "Pollos RO",
@@ -1235,13 +1235,13 @@
         }
       ],
       "error": null,
-      "durationMs": 1691
+      "durationMs": 4077
     },
     {
       "store": "El Carnicero",
       "products": [],
       "error": "Playwright corrió pero no encontró productos válidos",
-      "durationMs": 92237
+      "durationMs": 40774
     }
   ],
   "allProducts": [
@@ -1520,6 +1520,27 @@
     },
     {
       "store": "Jumbo",
+      "id": "jumbo-57294",
+      "name": "Bistec de Pechuga Deshuesada 530 g",
+      "brand": "Super Pollo",
+      "format": "530 g",
+      "weightKg": 0.53,
+      "url": "https://www.jumbo.cl/bistec-de-pechuga-pollo-super-530-gr-pet/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/599013/Bistec-de-Pechuga-Deshuesada-530-g.jpg?v=639095278858200000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 3490,
+          "pricePerKg": 6585,
+          "label": "oferta"
+        }
+      ],
+      "bestPricePerKg": 6585,
+      "ean": "7809611715029",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
       "id": "jumbo-147704",
       "name": "Pechuga Deshuesada Sadia 1 kg",
       "brand": "Sadia",
@@ -1600,27 +1621,6 @@
       ],
       "bestPricePerKg": 7467,
       "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-88661",
-      "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
-      "brand": "Ariztía",
-      "format": "850 g",
-      "weightKg": 0.85,
-      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/549921/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639010065270370000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 6490,
-          "pricePerKg": 7635,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 7635,
-      "ean": "7804115001739",
       "inStock": true
     },
     {
@@ -1750,27 +1750,6 @@
       "inStock": true
     },
     {
-      "store": "Jumbo",
-      "id": "jumbo-57294",
-      "name": "Bistec de Pechuga Deshuesada 530 g",
-      "brand": "Super Pollo",
-      "format": "530 g",
-      "weightKg": 0.53,
-      "url": "https://www.jumbo.cl/bistec-de-pechuga-pollo-super-530-gr-pet/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/599013/Bistec-de-Pechuga-Deshuesada-530-g.jpg?v=639095278858200000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 4290,
-          "pricePerKg": 8094,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 8094,
-      "ean": "7809611715029",
-      "inStock": true
-    },
-    {
       "store": "Pollos RO",
       "id": "pollos-ro-1846",
       "name": "PROMO GYMBOX-5: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo (L) – 🐔+🥚",
@@ -1845,12 +1824,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 7790,
-          "pricePerKg": 9987,
+          "unitPrice": 7990,
+          "pricePerKg": 10244,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 9987,
+      "bestPricePerKg": 10244,
       "ean": "7809611711656",
       "inStock": true
     },
@@ -1873,27 +1852,6 @@
       ],
       "bestPricePerKg": 10886,
       "ean": "7808749501146",
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-118002",
-      "name": "Pechuga de Pollo Deshuesada Canto del Gallo Sin Marinar 550 g",
-      "brand": "Canto del Gallo",
-      "format": "550 g",
-      "weightKg": 0.55,
-      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-cdg-550g-1928751/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/576119/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639069338028370000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 6020,
-          "pricePerKg": 10945,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 10945,
-      "ean": "7804115002248",
       "inStock": true
     },
     {
@@ -1978,6 +1936,27 @@
       ],
       "bestPricePerKg": 11667,
       "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
+      "id": "jumbo-118002",
+      "name": "Pechuga de Pollo Deshuesada Canto del Gallo Sin Marinar 550 g",
+      "brand": "Canto del Gallo",
+      "format": "550 g",
+      "weightKg": 0.55,
+      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-cdg-550g-1928751/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/576119/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639069338028370000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 6590,
+          "pricePerKg": 11982,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 11982,
+      "ean": "7804115002248",
       "inStock": true
     },
     {
@@ -2314,6 +2293,27 @@
       ],
       "bestPricePerKg": 6890,
       "ean": "24627382",
+      "inStock": false
+    },
+    {
+      "store": "Jumbo",
+      "id": "jumbo-88661",
+      "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
+      "brand": "Ariztía",
+      "format": "850 g",
+      "weightKg": 0.85,
+      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/549921/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639010065270370000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 6490,
+          "pricePerKg": 7635,
+          "label": "oferta"
+        }
+      ],
+      "bestPricePerKg": 7635,
+      "ean": "7804115001739",
       "inStock": false
     },
     {
