@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:59:55.021Z",
+  "updatedAt": "2026-08-31T07:51:53.094Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -16,12 +16,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 27190,
-              "pricePerKg": 6042,
+              "unitPrice": 26990,
+              "pricePerKg": 5998,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6042,
+          "bestPricePerKg": 5998,
           "ean": "7809611710017",
           "inStock": true
         },
@@ -48,6 +48,27 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-3164",
+          "name": "Pechuga deshuesada de pollo congelado Sadia 4.5 Kg Pechuga deshuesada de pollo congelado",
+          "brand": "Sadia",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/158701/000000000000650263-UN-01.jpg?v=637878120026970000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 20990,
+              "pricePerKg": 4664,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4664,
+          "ean": "7891515623029",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-3156",
           "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
           "brand": "Fundo Rio Alegre",
@@ -58,12 +79,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 3930,
-              "pricePerKg": 4913,
+              "unitPrice": 3490,
+              "pricePerKg": 4363,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4913,
+          "bestPricePerKg": 4363,
           "ean": "7894904084302",
           "inStock": true
         },
@@ -100,12 +121,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 18990,
-              "pricePerKg": 4220,
+              "unitPrice": 21450,
+              "pricePerKg": 4767,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4220,
+          "bestPricePerKg": 4767,
           "ean": "7894904282890",
           "inStock": true
         },
@@ -142,12 +163,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 18990,
-              "pricePerKg": 4220,
+              "unitPrice": 21090,
+              "pricePerKg": 4687,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4220,
+          "bestPricePerKg": 4687,
           "ean": "7894904282883",
           "inStock": true
         },
@@ -163,12 +184,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 27190,
-              "pricePerKg": 6042,
+              "unitPrice": 26990,
+              "pricePerKg": 5998,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6042,
+          "bestPricePerKg": 5998,
           "ean": null,
           "inStock": null
         },
@@ -195,6 +216,27 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "name": "Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/product/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 20990,
+              "pricePerKg": 4664,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4664,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
           "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
           "brand": "Sin marca",
@@ -205,12 +247,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 3930,
-              "pricePerKg": 4913,
+              "unitPrice": 3490,
+              "pricePerKg": 4363,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4913,
+          "bestPricePerKg": 4363,
           "ean": null,
           "inStock": null
         },
@@ -247,12 +289,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 18990,
-              "pricePerKg": 4220,
+              "unitPrice": 21450,
+              "pricePerKg": 4767,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4220,
+          "bestPricePerKg": 4767,
           "ean": null,
           "inStock": null
         },
@@ -279,7 +321,7 @@
         }
       ],
       "error": null,
-      "durationMs": 62824
+      "durationMs": 59698
     },
     {
       "store": "Jumbo",
@@ -296,12 +338,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 6030,
-              "pricePerKg": 8040,
+              "unitPrice": 6690,
+              "pricePerKg": 8920,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 8040,
+          "bestPricePerKg": 8920,
           "ean": "7809611722034",
           "inStock": true
         },
@@ -313,16 +355,16 @@
           "format": "830 g",
           "weightKg": 0.83,
           "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/670273/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639231297676700000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 6490,
-              "pricePerKg": 7819,
-              "label": "oferta"
+              "unitPrice": 6590,
+              "pricePerKg": 7940,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 7819,
+          "bestPricePerKg": 7940,
           "ean": "7804115001081",
           "inStock": true
         },
@@ -334,13 +376,13 @@
           "format": "700 g",
           "weightKg": 0.7,
           "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-ariztia-700-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669181/Pechuga-de-Pollo-Deshuesada-Ariztia-700-g.jpg?v=639227638735070000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672492/Pechuga-de-Pollo-Deshuesada-Ariztia-700-g.jpg?v=639237057990870000",
           "tiers": [
             {
               "minQty": 1,
               "unitPrice": 5990,
               "pricePerKg": 8557,
-              "label": "oferta"
+              "label": "regular"
             }
           ],
           "bestPricePerKg": 8557,
@@ -376,16 +418,16 @@
           "format": "850 g",
           "weightKg": 0.85,
           "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/670284/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639231297717900000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 6490,
-              "pricePerKg": 7635,
-              "label": "oferta"
+              "unitPrice": 6590,
+              "pricePerKg": 7753,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 7635,
+          "bestPricePerKg": 7753,
           "ean": "7804115001739",
           "inStock": true
         },
@@ -418,7 +460,7 @@
           "format": "550 g",
           "weightKg": 0.55,
           "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-cdg-550g-1928751/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669210/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639227638856030000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672718/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639237058342400000",
           "tiers": [
             {
               "minQty": 1,
@@ -485,12 +527,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 6690,
-              "pricePerKg": 7871,
-              "label": "oferta"
+              "unitPrice": 6990,
+              "pricePerKg": 8224,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 7871,
+          "bestPricePerKg": 8224,
           "ean": "7809611715081",
           "inStock": true
         },
@@ -502,7 +544,7 @@
           "format": "500 g",
           "weightKg": 0.5,
           "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-500-g-1667235/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669166/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639227638674830000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672358/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639237057764800000",
           "tiers": [
             {
               "minQty": 1,
@@ -513,6 +555,27 @@
           ],
           "bestPricePerKg": 9780,
           "ean": "7804115001395",
+          "inStock": true
+        },
+        {
+          "store": "Jumbo",
+          "id": "jumbo-147704",
+          "name": "Pechuga Deshuesada de Pollo Sadia 1 kg",
+          "brand": "Sadia",
+          "format": "1 kg",
+          "weightKg": 1,
+          "url": "https://www.jumbo.cl/pollo-pechuga-desh-2034037/p",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/584123/Pechuga-Deshuesada-Sadia-1-kg.jpg?v=639077518409300000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4194,
+              "pricePerKg": 4194,
+              "label": "oferta"
+            }
+          ],
+          "bestPricePerKg": 4194,
+          "ean": "7891515551995",
           "inStock": true
         },
         {
@@ -534,27 +597,6 @@
           ],
           "bestPricePerKg": 11129,
           "ean": "7809611718488",
-          "inStock": true
-        },
-        {
-          "store": "Jumbo",
-          "id": "jumbo-147704",
-          "name": "Pechuga Deshuesada de Pollo Sadia 1 kg",
-          "brand": "Sadia",
-          "format": "1 kg",
-          "weightKg": 1,
-          "url": "https://www.jumbo.cl/pollo-pechuga-desh-2034037/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/584123/Pechuga-Deshuesada-Sadia-1-kg.jpg?v=639077518409300000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 6990,
-              "pricePerKg": 6990,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 6990,
-          "ean": "7891515551995",
           "inStock": true
         },
         {
@@ -590,12 +632,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 11990,
-              "pricePerKg": 7993,
+              "unitPrice": 11290,
+              "pricePerKg": 7527,
               "label": "oferta"
             }
           ],
-          "bestPricePerKg": 7993,
+          "bestPricePerKg": 7527,
           "ean": "7809611720788",
           "inStock": true
         },
@@ -632,36 +674,36 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4390,
-              "pricePerKg": 8283,
-              "label": "oferta"
+              "unitPrice": 5190,
+              "pricePerKg": 9792,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 8283,
+          "bestPricePerKg": 9792,
           "ean": "7809611715029",
           "inStock": true
         }
       ],
       "error": null,
-      "durationMs": 1097
+      "durationMs": 746
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 73306
+      "durationMs": 72653
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 20559
+      "durationMs": 21009
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 28761
+      "durationMs": 27297
     },
     {
       "store": "Pollos RO",
@@ -678,12 +720,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 40000,
-              "pricePerKg": 6667,
+              "unitPrice": 42000,
+              "pricePerKg": 7000,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6667,
+          "bestPricePerKg": 7000,
           "ean": null,
           "inStock": true
         },
@@ -699,12 +741,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 66000,
-              "pricePerKg": 5500,
+              "unitPrice": 68000,
+              "pricePerKg": 5667,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5500,
+          "bestPricePerKg": 5667,
           "ean": null,
           "inStock": true
         },
@@ -720,12 +762,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 80000,
-              "pricePerKg": 5333,
+              "unitPrice": 82000,
+              "pricePerKg": 5467,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5333,
+          "bestPricePerKg": 5467,
           "ean": null,
           "inStock": true
         },
@@ -825,12 +867,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 196000,
-              "pricePerKg": 13067,
+              "unitPrice": 200000,
+              "pricePerKg": 13333,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 13067,
+          "bestPricePerKg": 13333,
           "ean": null,
           "inStock": true
         },
@@ -899,7 +941,7 @@
         }
       ],
       "error": null,
-      "durationMs": 2313
+      "durationMs": 1552
     },
     {
       "store": "El Carnicero",
@@ -907,7 +949,7 @@
         {
           "store": "El Carnicero",
           "id": "el-carnicero-pechuga-deshuesada-1-kg",
-          "name": "Pechuga Deshuesada 1 kg",
+          "name": "Agotado Pechuga Deshuesada 1 kg",
           "brand": "Sin marca",
           "format": "1 kg",
           "weightKg": 1,
@@ -923,12 +965,12 @@
           ],
           "bestPricePerKg": 4990,
           "ean": null,
-          "inStock": null
+          "inStock": false
         },
         {
           "store": "El Carnicero",
-          "id": "el-carnicero-q93fjzt85y",
-          "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Pec",
+          "id": "el-carnicero-3p7w61m0vh4",
+          "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
           "brand": "Sin marca",
           "format": "1 kg",
           "weightKg": 1,
@@ -944,54 +986,33 @@
           ],
           "bestPricePerKg": 4990,
           "ean": null,
-          "inStock": null
+          "inStock": false
         }
       ],
       "error": null,
-      "durationMs": 40411
+      "durationMs": 40442
     }
   ],
   "allProducts": [
     {
-      "store": "Alvi",
-      "id": "alvi-10404",
-      "name": "Pechuga de pollo deshuesada congelada",
-      "brand": "Fundo Rio Alegre",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
+      "store": "Jumbo",
+      "id": "jumbo-147704",
+      "name": "Pechuga Deshuesada de Pollo Sadia 1 kg",
+      "brand": "Sadia",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://www.jumbo.cl/pollo-pechuga-desh-2034037/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/584123/Pechuga-Deshuesada-Sadia-1-kg.jpg?v=639077518409300000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 18990,
-          "pricePerKg": 4220,
-          "label": "regular"
+          "unitPrice": 4194,
+          "pricePerKg": 4194,
+          "label": "oferta"
         }
       ],
-      "bestPricePerKg": 4220,
-      "ean": "7894904282890",
-      "inStock": true
-    },
-    {
-      "store": "Alvi",
-      "id": "alvi-10403",
-      "name": "Filetitos de pechuga de pollo congelada",
-      "brand": "Fundo Rio Alegre",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 18990,
-          "pricePerKg": 4220,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4220,
-      "ean": "7894904282883",
+      "bestPricePerKg": 4194,
+      "ean": "7891515551995",
       "inStock": true
     },
     {
@@ -1006,13 +1027,76 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 3930,
-          "pricePerKg": 4913,
+          "unitPrice": 3490,
+          "pricePerKg": 4363,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4913,
+      "bestPricePerKg": 4363,
       "ean": "7894904084302",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-3164",
+      "name": "Pechuga deshuesada de pollo congelado Sadia 4.5 Kg Pechuga deshuesada de pollo congelado",
+      "brand": "Sadia",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/158701/000000000000650263-UN-01.jpg?v=637878120026970000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 20990,
+          "pricePerKg": 4664,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4664,
+      "ean": "7891515623029",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-10403",
+      "name": "Filetitos de pechuga de pollo congelada",
+      "brand": "Fundo Rio Alegre",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 21090,
+          "pricePerKg": 4687,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4687,
+      "ean": "7894904282883",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-10404",
+      "name": "Pechuga de pollo deshuesada congelada",
+      "brand": "Fundo Rio Alegre",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 21450,
+          "pricePerKg": 4767,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4767,
+      "ean": "7894904282890",
       "inStock": true
     },
     {
@@ -1048,12 +1132,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 80000,
-          "pricePerKg": 5333,
+          "unitPrice": 82000,
+          "pricePerKg": 5467,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5333,
+      "bestPricePerKg": 5467,
       "ean": null,
       "inStock": true
     },
@@ -1069,12 +1153,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 66000,
-          "pricePerKg": 5500,
+          "unitPrice": 68000,
+          "pricePerKg": 5667,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5500,
+      "bestPricePerKg": 5667,
       "ean": null,
       "inStock": true
     },
@@ -1090,12 +1174,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 27190,
-          "pricePerKg": 6042,
+          "unitPrice": 26990,
+          "pricePerKg": 5998,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 6042,
+      "bestPricePerKg": 5998,
       "ean": "7809611710017",
       "inStock": true
     },
@@ -1139,27 +1223,6 @@
       ],
       "bestPricePerKg": 6590,
       "ean": "24978521",
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-1765",
-      "name": "6 kg Pechuga de Pollo Organica 💪🐔",
-      "brand": "Pollos RO",
-      "format": "6 kg",
-      "weightKg": 6,
-      "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 40000,
-          "pricePerKg": 6667,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 6667,
-      "ean": null,
       "inStock": true
     },
     {
@@ -1226,24 +1289,24 @@
       "inStock": true
     },
     {
-      "store": "Jumbo",
-      "id": "jumbo-147704",
-      "name": "Pechuga Deshuesada de Pollo Sadia 1 kg",
-      "brand": "Sadia",
-      "format": "1 kg",
-      "weightKg": 1,
-      "url": "https://www.jumbo.cl/pollo-pechuga-desh-2034037/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/584123/Pechuga-Deshuesada-Sadia-1-kg.jpg?v=639077518409300000",
+      "store": "Pollos RO",
+      "id": "pollos-ro-1765",
+      "name": "6 kg Pechuga de Pollo Organica 💪🐔",
+      "brand": "Pollos RO",
+      "format": "6 kg",
+      "weightKg": 6,
+      "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 6990,
-          "pricePerKg": 6990,
+          "unitPrice": 42000,
+          "pricePerKg": 7000,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 6990,
-      "ean": "7891515551995",
+      "bestPricePerKg": 7000,
+      "ean": null,
       "inStock": true
     },
     {
@@ -1269,22 +1332,43 @@
     },
     {
       "store": "Jumbo",
+      "id": "jumbo-134251",
+      "name": "Pechuga Deshuesada de Pollo Congelada 1.5 kg",
+      "brand": "Super Pollo",
+      "format": "1.5 kg",
+      "weightKg": 1.5,
+      "url": "https://www.jumbo.cl/pechuga-desh-pollo-1-5-kg-env-cong-sp-1983116/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/322626/Pechuga-Deshuesada-Congelada-15-kg.jpg?v=638776426280000000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 11290,
+          "pricePerKg": 7527,
+          "label": "oferta"
+        }
+      ],
+      "bestPricePerKg": 7527,
+      "ean": "7809611720788",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
       "id": "jumbo-88661",
       "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
       "brand": "Ariztía",
       "format": "850 g",
       "weightKg": 0.85,
       "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/670284/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639231297717900000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 6490,
-          "pricePerKg": 7635,
-          "label": "oferta"
+          "unitPrice": 6590,
+          "pricePerKg": 7753,
+          "label": "regular"
         }
       ],
-      "bestPricePerKg": 7635,
+      "bestPricePerKg": 7753,
       "ean": "7804115001739",
       "inStock": true
     },
@@ -1296,80 +1380,17 @@
       "format": "830 g",
       "weightKg": 0.83,
       "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/670273/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639231297676700000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 6490,
-          "pricePerKg": 7819,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 7819,
-      "ean": "7804115001081",
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-240",
-      "name": "Pechuga Deshuesada de Pollo 850 g",
-      "brand": "Super Pollo",
-      "format": "850 g",
-      "weightKg": 0.85,
-      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-super-pollo-1-kg-aprox-bandeja/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/575930/Pechuga-Deshuesada-850-g.jpg?v=639069337578670000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 6690,
-          "pricePerKg": 7871,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 7871,
-      "ean": "7809611715081",
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-134251",
-      "name": "Pechuga Deshuesada de Pollo Congelada 1.5 kg",
-      "brand": "Super Pollo",
-      "format": "1.5 kg",
-      "weightKg": 1.5,
-      "url": "https://www.jumbo.cl/pechuga-desh-pollo-1-5-kg-env-cong-sp-1983116/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/322626/Pechuga-Deshuesada-Congelada-15-kg.jpg?v=638776426280000000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 11990,
-          "pricePerKg": 7993,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 7993,
-      "ean": "7809611720788",
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-157581",
-      "name": "Pechuga de Pollo Deshuesada 750 g",
-      "brand": "Super Pollo",
-      "format": "750 g",
-      "weightKg": 0.75,
-      "url": "https://www.jumbo.cl/pechuga-desh-pollo-iqf-super-750g-2050884/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/554126/Pechuga-de-Pollo-Deshuesada-750-g.jpg?v=639015096373170000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 6030,
-          "pricePerKg": 8040,
+          "unitPrice": 6590,
+          "pricePerKg": 7940,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 8040,
-      "ean": "7809611722034",
+      "bestPricePerKg": 7940,
+      "ean": "7804115001081",
       "inStock": true
     },
     {
@@ -1395,23 +1416,23 @@
     },
     {
       "store": "Jumbo",
-      "id": "jumbo-57294",
-      "name": "Bistec de Pechuga Deshuesada 530 g",
+      "id": "jumbo-240",
+      "name": "Pechuga Deshuesada de Pollo 850 g",
       "brand": "Super Pollo",
-      "format": "530 g",
-      "weightKg": 0.53,
-      "url": "https://www.jumbo.cl/bistec-de-pechuga-pollo-super-530-gr-pet/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/599013/Bistec-de-Pechuga-Deshuesada-530-g.jpg?v=639095278858200000",
+      "format": "850 g",
+      "weightKg": 0.85,
+      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-super-pollo-1-kg-aprox-bandeja/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/575930/Pechuga-Deshuesada-850-g.jpg?v=639069337578670000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4390,
-          "pricePerKg": 8283,
-          "label": "oferta"
+          "unitPrice": 6990,
+          "pricePerKg": 8224,
+          "label": "regular"
         }
       ],
-      "bestPricePerKg": 8283,
-      "ean": "7809611715029",
+      "bestPricePerKg": 8224,
+      "ean": "7809611715081",
       "inStock": true
     },
     {
@@ -1422,13 +1443,13 @@
       "format": "700 g",
       "weightKg": 0.7,
       "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-ariztia-700-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669181/Pechuga-de-Pollo-Deshuesada-Ariztia-700-g.jpg?v=639227638735070000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672492/Pechuga-de-Pollo-Deshuesada-Ariztia-700-g.jpg?v=639237057990870000",
       "tiers": [
         {
           "minQty": 1,
           "unitPrice": 5990,
           "pricePerKg": 8557,
-          "label": "oferta"
+          "label": "regular"
         }
       ],
       "bestPricePerKg": 8557,
@@ -1458,13 +1479,34 @@
     },
     {
       "store": "Jumbo",
+      "id": "jumbo-157581",
+      "name": "Pechuga de Pollo Deshuesada 750 g",
+      "brand": "Super Pollo",
+      "format": "750 g",
+      "weightKg": 0.75,
+      "url": "https://www.jumbo.cl/pechuga-desh-pollo-iqf-super-750g-2050884/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/554126/Pechuga-de-Pollo-Deshuesada-750-g.jpg?v=639015096373170000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 6690,
+          "pricePerKg": 8920,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 8920,
+      "ean": "7809611722034",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
       "id": "jumbo-150227",
       "name": "Pechuga Deshuesada de Pollo 500 g",
       "brand": "Ariztía",
       "format": "500 g",
       "weightKg": 0.5,
       "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-500-g-1667235/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669166/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639227638674830000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672358/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639237057764800000",
       "tiers": [
         {
           "minQty": 1,
@@ -1475,6 +1517,27 @@
       ],
       "bestPricePerKg": 9780,
       "ean": "7804115001395",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
+      "id": "jumbo-57294",
+      "name": "Bistec de Pechuga Deshuesada 530 g",
+      "brand": "Super Pollo",
+      "format": "530 g",
+      "weightKg": 0.53,
+      "url": "https://www.jumbo.cl/bistec-de-pechuga-pollo-super-530-gr-pet/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/599013/Bistec-de-Pechuga-Deshuesada-530-g.jpg?v=639095278858200000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 5190,
+          "pricePerKg": 9792,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 9792,
+      "ean": "7809611715029",
       "inStock": true
     },
     {
@@ -1590,7 +1653,7 @@
       "format": "550 g",
       "weightKg": 0.55,
       "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-cdg-550g-1928751/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/669210/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639227638856030000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672718/Pechuga-de-Pollo-Deshuesada-Canto-del-Gallo-Sin-Marinar-550-g.jpg?v=639237058342400000",
       "tiers": [
         {
           "minQty": 1,
@@ -1626,27 +1689,6 @@
     },
     {
       "store": "Pollos RO",
-      "id": "pollos-ro-17491",
-      "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 196000,
-          "pricePerKg": 13067,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 13067,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
       "id": "pollos-ro-15700",
       "name": "PROMO GYMPRO1: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo – Tamaño Extra + 5 kg Churrasco Posta Rosada – 🐔+🥚+🥩",
       "brand": "Pollos RO",
@@ -1663,6 +1705,27 @@
         }
       ],
       "bestPricePerKg": 13200,
+      "ean": null,
+      "inStock": true
+    },
+    {
+      "store": "Pollos RO",
+      "id": "pollos-ro-17491",
+      "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
+      "brand": "Pollos RO",
+      "format": "15 kg",
+      "weightKg": 15,
+      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
+      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 200000,
+          "pricePerKg": 13333,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 13333,
       "ean": null,
       "inStock": true
     },
@@ -1689,27 +1752,6 @@
     },
     {
       "store": "Alvi",
-      "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-      "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
-      "brand": "Sin marca",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-      "image": null,
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 18990,
-          "pricePerKg": 4220,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4220,
-      "ean": null,
-      "inStock": null
-    },
-    {
-      "store": "Alvi",
       "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
       "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
       "brand": "Sin marca",
@@ -1720,54 +1762,54 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 3930,
-          "pricePerKg": 4913,
+          "unitPrice": 3490,
+          "pricePerKg": 4363,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4913,
+      "bestPricePerKg": 4363,
       "ean": null,
       "inStock": null
     },
     {
-      "store": "El Carnicero",
-      "id": "el-carnicero-pechuga-deshuesada-1-kg",
-      "name": "Pechuga Deshuesada 1 kg",
+      "store": "Alvi",
+      "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+      "name": "Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
       "brand": "Sin marca",
-      "format": "1 kg",
-      "weightKg": 1,
-      "url": "https://www.elcarnicero.cl/pechuga-deshuesada-1-kg",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/product/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
       "image": null,
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4990,
-          "pricePerKg": 4990,
+          "unitPrice": 20990,
+          "pricePerKg": 4664,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4990,
+      "bestPricePerKg": 4664,
       "ean": null,
       "inStock": null
     },
     {
-      "store": "El Carnicero",
-      "id": "el-carnicero-q93fjzt85y",
-      "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Pec",
+      "store": "Alvi",
+      "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+      "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
       "brand": "Sin marca",
-      "format": "1 kg",
-      "weightKg": 1,
-      "url": "https://www.elcarnicero.cl",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
       "image": null,
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4990,
-          "pricePerKg": 4990,
+          "unitPrice": 21450,
+          "pricePerKg": 4767,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4990,
+      "bestPricePerKg": 4767,
       "ean": null,
       "inStock": null
     },
@@ -1804,12 +1846,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 27190,
-          "pricePerKg": 6042,
+          "unitPrice": 26990,
+          "pricePerKg": 5998,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 6042,
+      "bestPricePerKg": 5998,
       "ean": null,
       "inStock": null
     },
@@ -1854,28 +1896,70 @@
       "bestPricePerKg": 6829,
       "ean": null,
       "inStock": null
+    },
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-pechuga-deshuesada-1-kg",
+      "name": "Agotado Pechuga Deshuesada 1 kg",
+      "brand": "Sin marca",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://www.elcarnicero.cl/pechuga-deshuesada-1-kg",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4990,
+          "pricePerKg": 4990,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4990,
+      "ean": null,
+      "inStock": false
+    },
+    {
+      "store": "El Carnicero",
+      "id": "el-carnicero-3p7w61m0vh4",
+      "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
+      "brand": "Sin marca",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://www.elcarnicero.cl",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4990,
+          "pricePerKg": 4990,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4990,
+      "ean": null,
+      "inStock": false
     }
   ],
   "best": {
-    "store": "Alvi",
-    "id": "alvi-10404",
-    "name": "Pechuga de pollo deshuesada congelada",
-    "brand": "Fundo Rio Alegre",
-    "format": "4.5 kg",
-    "weightKg": 4.5,
-    "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-    "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
+    "store": "Jumbo",
+    "id": "jumbo-147704",
+    "name": "Pechuga Deshuesada de Pollo Sadia 1 kg",
+    "brand": "Sadia",
+    "format": "1 kg",
+    "weightKg": 1,
+    "url": "https://www.jumbo.cl/pollo-pechuga-desh-2034037/p",
+    "image": "https://jumbocl.vteximg.com.br/arquivos/ids/584123/Pechuga-Deshuesada-Sadia-1-kg.jpg?v=639077518409300000",
     "tiers": [
       {
         "minQty": 1,
-        "unitPrice": 18990,
-        "pricePerKg": 4220,
-        "label": "regular"
+        "unitPrice": 4194,
+        "pricePerKg": 4194,
+        "label": "oferta"
       }
     ],
-    "bestPricePerKg": 4220,
-    "ean": "7894904282890",
+    "bestPricePerKg": 4194,
+    "ean": "7891515551995",
     "inStock": true
   },
-  "totalProducts": 43
+  "totalProducts": 45
 }
