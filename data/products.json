@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T06:47:58.953Z",
+  "updatedAt": "2026-09-14T07:22:47.056Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -16,12 +16,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 26990,
-              "pricePerKg": 5998,
+              "unitPrice": 27350,
+              "pricePerKg": 6078,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5998,
+          "bestPricePerKg": 6078,
           "ean": "7809611710017",
           "inStock": true
         },
@@ -48,6 +48,69 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-10404",
+          "name": "Pechuga de pollo deshuesada congelada",
+          "brand": "Fundo Rio Alegre",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 16990,
+              "pricePerKg": 3776,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3776,
+          "ean": "7894904282890",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-3164",
+          "name": "Pechuga deshuesada de pollo congelado Sadia 4.5 Kg Pechuga deshuesada de pollo congelado",
+          "brand": "Sadia",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/158701/000000000000650263-UN-01.jpg?v=637878120026970000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 20990,
+              "pricePerKg": 4664,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4664,
+          "ean": "7891515623029",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-3156",
+          "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
+          "brand": "Fundo Rio Alegre",
+          "format": "800 g",
+          "weightKg": 0.8,
+          "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3490,
+              "pricePerKg": 4363,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4363,
+          "ean": "7894904084302",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-3146",
           "name": "Filetitos de pechuga de pollo congelado",
           "brand": "Super Pollo",
@@ -65,27 +128,6 @@
           ],
           "bestPricePerKg": 6829,
           "ean": "7809611720573",
-          "inStock": true
-        },
-        {
-          "store": "Alvi",
-          "id": "alvi-10404",
-          "name": "Pechuga de pollo deshuesada congelada",
-          "brand": "Fundo Rio Alegre",
-          "format": "4.5 kg",
-          "weightKg": 4.5,
-          "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-          "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 21450,
-              "pricePerKg": 4767,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4767,
-          "ean": "7894904282890",
           "inStock": true
         },
         {
@@ -121,12 +163,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 21090,
-              "pricePerKg": 4687,
+              "unitPrice": 16990,
+              "pricePerKg": 3776,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4687,
+          "bestPricePerKg": 3776,
           "ean": "7894904282883",
           "inStock": true
         },
@@ -142,12 +184,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 26990,
-              "pricePerKg": 5998,
+              "unitPrice": 27350,
+              "pricePerKg": 6078,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5998,
+          "bestPricePerKg": 6078,
           "ean": null,
           "inStock": null
         },
@@ -174,6 +216,69 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+          "name": "Exclusivo Internet Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 16990,
+              "pricePerKg": 3776,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3776,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "name": "Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/product/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 20990,
+              "pricePerKg": 4664,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4664,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
+          "brand": "Sin marca",
+          "format": "800 g",
+          "weightKg": 0.8,
+          "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3490,
+              "pricePerKg": 4363,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4363,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
           "name": "Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 2 un",
           "brand": "Sin marca",
@@ -190,27 +295,6 @@
             }
           ],
           "bestPricePerKg": 6829,
-          "ean": null,
-          "inStock": null
-        },
-        {
-          "store": "Alvi",
-          "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-          "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
-          "brand": "Sin marca",
-          "format": "4.5 kg",
-          "weightKg": 4.5,
-          "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-          "image": null,
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 21450,
-              "pricePerKg": 4767,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4767,
           "ean": null,
           "inStock": null
         },
@@ -234,10 +318,31 @@
           "bestPricePerKg": 5250,
           "ean": null,
           "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+          "name": "Exclusivo Internet Fundo Rio Alegre Filetitos de pechuga de poll... 4.5 Kg Precio socio Desde 2 un",
+          "brand": "Sin marca",
+          "format": "4.5 kg",
+          "weightKg": 4.5,
+          "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 16990,
+              "pricePerKg": 3776,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 3776,
+          "ean": null,
+          "inStock": null
         }
       ],
       "error": null,
-      "durationMs": 59931
+      "durationMs": 62469
     },
     {
       "store": "Jumbo",
@@ -328,27 +433,6 @@
         },
         {
           "store": "Jumbo",
-          "id": "jumbo-88661",
-          "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
-          "brand": "Ariztía",
-          "format": "850 g",
-          "weightKg": 0.85,
-          "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 6590,
-              "pricePerKg": 7753,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 7753,
-          "ean": "7804115001739",
-          "inStock": true
-        },
-        {
-          "store": "Jumbo",
           "id": "jumbo-23970",
           "name": "Pechuga de Pollo Deshuesada Sin Piel Al Natural Super Pollo 780 g",
           "brand": "Super Pollo",
@@ -366,6 +450,27 @@
           ],
           "bestPricePerKg": 10244,
           "ean": "7809611711656",
+          "inStock": true
+        },
+        {
+          "store": "Jumbo",
+          "id": "jumbo-88661",
+          "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
+          "brand": "Ariztía",
+          "format": "850 g",
+          "weightKg": 0.85,
+          "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 6590,
+              "pricePerKg": 7753,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 7753,
+          "ean": "7804115001739",
           "inStock": true
         },
         {
@@ -460,7 +565,7 @@
           "format": "500 g",
           "weightKg": 0.5,
           "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-500-g-1667235/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672358/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639237057764800000",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/676302/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639243913212600000",
           "tiers": [
             {
               "minQty": 1,
@@ -601,263 +706,31 @@
         }
       ],
       "error": null,
-      "durationMs": 878
+      "durationMs": 1823
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 72804
+      "durationMs": 72588
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 21121
+      "durationMs": 22153
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 29711
+      "durationMs": 29107
     },
     {
       "store": "Pollos RO",
-      "products": [
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-1765",
-          "name": "6 kg Pechuga de Pollo Organica 💪🐔",
-          "brand": "Pollos RO",
-          "format": "6 kg",
-          "weightKg": 6,
-          "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 42000,
-              "pricePerKg": 7000,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 7000,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-1775",
-          "name": "12 kg Pechuga de Pollo Organica 💪🐔",
-          "brand": "Pollos RO",
-          "format": "12 kg",
-          "weightKg": 12,
-          "url": "https://www.pollosro.cl/tienda/pollo/12-kg-pechuga-de-pollo-organica/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 68000,
-              "pricePerKg": 5667,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 5667,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-1776",
-          "name": "15 kg Pechuga de Pollo Organica 🐔💪",
-          "brand": "Pollos RO",
-          "format": "15 kg",
-          "weightKg": 15,
-          "url": "https://www.pollosro.cl/tienda/pollo/15-kg-pechuga-de-pollo-organica/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-3.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 82000,
-              "pricePerKg": 5467,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 5467,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-19101",
-          "name": "PROMO GYMBOX-6: 15 kg Pechuga de Pollo Organica + 90 Huevos de campo Tamaño Extra – 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "15 kg",
-          "weightKg": 15,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox6-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2023/06/267468825_6684320634972476_1816296834940399013_n.jpg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 112000,
-              "pricePerKg": 7467,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 7467,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-17626",
-          "name": "PROMO GYMBOX-4: 12 kg Pechuga de Pollo Organica + 180 Huevos de campo  Tamaño Extra – 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "12 kg",
-          "weightKg": 12,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox4-12-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo-1.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 118000,
-              "pricePerKg": 9833,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 9833,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-17496",
-          "name": "PROMO GYMBOX-2: 6 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra – 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "6 kg",
-          "weightKg": 6,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox2-6-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 92000,
-              "pricePerKg": 15333,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 15333,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-17493",
-          "name": "PROMO GYMBOX-3: 12 kg Pechuga de Pollo Organica + 90 Huevos de campo  Tamaño Extra – 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "12 kg",
-          "weightKg": 12,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox3-12-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 98000,
-              "pricePerKg": 8167,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 8167,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-17491",
-          "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
-          "brand": "Pollos RO",
-          "format": "15 kg",
-          "weightKg": 15,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 200000,
-              "pricePerKg": 13333,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 13333,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-15700",
-          "name": "PROMO GYMPRO1: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo – Tamaño Extra + 5 kg Churrasco Posta Rosada – 🐔+🥚+🥩",
-          "brand": "Pollos RO",
-          "format": "15 kg",
-          "weightKg": 15,
-          "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro1-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-churrasco-posta-rosada/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Churrasco-Posta-y-Huevos-de-Campo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 198000,
-              "pricePerKg": 13200,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 13200,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-15697",
-          "name": "PROMO GYMBOX-1: 6 kg Pechuga de Pollo Organica + 90 Huevos de campo – Tamaño Extra 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "6 kg",
-          "weightKg": 6,
-          "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox1-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 72000,
-              "pricePerKg": 12000,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 12000,
-          "ean": null,
-          "inStock": true
-        },
-        {
-          "store": "Pollos RO",
-          "id": "pollos-ro-1846",
-          "name": "PROMO GYMBOX-5: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo (L) – 🐔+🥚",
-          "brand": "Pollos RO",
-          "format": "15 kg",
-          "weightKg": 15,
-          "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox5-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-          "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pollo-Huevo.jpeg",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 132000,
-              "pricePerKg": 8800,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 8800,
-          "ean": null,
-          "inStock": true
-        }
-      ],
-      "error": null,
-      "durationMs": 1808
+      "products": [],
+      "error": "WooCommerce API sin productos válidos",
+      "durationMs": 1538
     },
     {
       "store": "El Carnicero",
@@ -865,7 +738,7 @@
         {
           "store": "El Carnicero",
           "id": "el-carnicero-pechuga-deshuesada-1-kg",
-          "name": "Agotado Pechuga Deshuesada 1 kg",
+          "name": "Agotado 14% Pechuga Deshuesada 1 kg",
           "brand": "Sin marca",
           "format": "1 kg",
           "weightKg": 1,
@@ -874,18 +747,18 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4990,
-              "pricePerKg": 4990,
+              "unitPrice": 4290,
+              "pricePerKg": 4290,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4990,
+          "bestPricePerKg": 4290,
           "ean": null,
           "inStock": false
         },
         {
           "store": "El Carnicero",
-          "id": "el-carnicero-53jeesxksfq",
+          "id": "el-carnicero-trp3goq541j",
           "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
           "brand": "Sin marca",
           "format": "1 kg",
@@ -895,42 +768,21 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4990,
-              "pricePerKg": 4990,
+              "unitPrice": 4290,
+              "pricePerKg": 4290,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4990,
+          "bestPricePerKg": 4290,
           "ean": null,
           "inStock": false
         }
       ],
       "error": null,
-      "durationMs": 40598
+      "durationMs": 40705
     }
   ],
   "allProducts": [
-    {
-      "store": "Alvi",
-      "id": "alvi-10403",
-      "name": "Filetitos de pechuga de pollo congelada",
-      "brand": "Fundo Rio Alegre",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 21090,
-          "pricePerKg": 4687,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4687,
-      "ean": "7894904282883",
-      "inStock": true
-    },
     {
       "store": "Alvi",
       "id": "alvi-10404",
@@ -943,13 +795,76 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 21450,
-          "pricePerKg": 4767,
+          "unitPrice": 16990,
+          "pricePerKg": 3776,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4767,
+      "bestPricePerKg": 3776,
       "ean": "7894904282890",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-10403",
+      "name": "Filetitos de pechuga de pollo congelada",
+      "brand": "Fundo Rio Alegre",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 16990,
+          "pricePerKg": 3776,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3776,
+      "ean": "7894904282883",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-3156",
+      "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
+      "brand": "Fundo Rio Alegre",
+      "format": "800 g",
+      "weightKg": 0.8,
+      "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 3490,
+          "pricePerKg": 4363,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4363,
+      "ean": "7894904084302",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-3164",
+      "name": "Pechuga deshuesada de pollo congelado Sadia 4.5 Kg Pechuga deshuesada de pollo congelado",
+      "brand": "Sadia",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/158701/000000000000650263-UN-01.jpg?v=637878120026970000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 20990,
+          "pricePerKg": 4664,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4664,
+      "ean": "7891515623029",
       "inStock": true
     },
     {
@@ -974,48 +889,6 @@
       "inStock": true
     },
     {
-      "store": "Pollos RO",
-      "id": "pollos-ro-1776",
-      "name": "15 kg Pechuga de Pollo Organica 🐔💪",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/pollo/15-kg-pechuga-de-pollo-organica/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo-3.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 82000,
-          "pricePerKg": 5467,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 5467,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-1775",
-      "name": "12 kg Pechuga de Pollo Organica 💪🐔",
-      "brand": "Pollos RO",
-      "format": "12 kg",
-      "weightKg": 12,
-      "url": "https://www.pollosro.cl/tienda/pollo/12-kg-pechuga-de-pollo-organica/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 68000,
-          "pricePerKg": 5667,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 5667,
-      "ean": null,
-      "inStock": true
-    },
-    {
       "store": "Alvi",
       "id": "alvi-3151",
       "name": "Pechuga deshuesada Super Pollo congelada 4.5 Kg Pechuga deshuesada de pollo congelada",
@@ -1027,12 +900,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 26990,
-          "pricePerKg": 5998,
+          "unitPrice": 27350,
+          "pricePerKg": 6078,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5998,
+      "bestPricePerKg": 6078,
       "ean": "7809611710017",
       "inStock": true
     },
@@ -1163,48 +1036,6 @@
       "inStock": true
     },
     {
-      "store": "Pollos RO",
-      "id": "pollos-ro-1765",
-      "name": "6 kg Pechuga de Pollo Organica 💪🐔",
-      "brand": "Pollos RO",
-      "format": "6 kg",
-      "weightKg": 6,
-      "url": "https://www.pollosro.cl/tienda/pollo/6-kg-pechuga-de-pollo-organica/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pechuga-de-Pollo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 42000,
-          "pricePerKg": 7000,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 7000,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-19101",
-      "name": "PROMO GYMBOX-6: 15 kg Pechuga de Pollo Organica + 90 Huevos de campo Tamaño Extra – 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox6-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2023/06/267468825_6684320634972476_1816296834940399013_n.jpg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 112000,
-          "pricePerKg": 7467,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 7467,
-      "ean": null,
-      "inStock": true
-    },
-    {
       "store": "Jumbo",
       "id": "jumbo-134251",
       "name": "Pechuga Deshuesada de Pollo Congelada 1.5 kg",
@@ -1268,27 +1099,6 @@
       "inStock": true
     },
     {
-      "store": "Pollos RO",
-      "id": "pollos-ro-17493",
-      "name": "PROMO GYMBOX-3: 12 kg Pechuga de Pollo Organica + 90 Huevos de campo  Tamaño Extra – 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "12 kg",
-      "weightKg": 12,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox3-12-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 98000,
-          "pricePerKg": 8167,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 8167,
-      "ean": null,
-      "inStock": true
-    },
-    {
       "store": "Jumbo",
       "id": "jumbo-240",
       "name": "Pechuga Deshuesada de Pollo 850 g",
@@ -1331,27 +1141,6 @@
       "inStock": true
     },
     {
-      "store": "Pollos RO",
-      "id": "pollos-ro-1846",
-      "name": "PROMO GYMBOX-5: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo (L) – 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox5-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/Pollo-Huevo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 132000,
-          "pricePerKg": 8800,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 8800,
-      "ean": null,
-      "inStock": true
-    },
-    {
       "store": "Jumbo",
       "id": "jumbo-157581",
       "name": "Pechuga de Pollo Deshuesada 750 g",
@@ -1380,7 +1169,7 @@
       "format": "500 g",
       "weightKg": 0.5,
       "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-500-g-1667235/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672358/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639237057764800000",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/676302/Pechuga-Deshuesada-de-Pollo-500-g.jpg?v=639243913212600000",
       "tiers": [
         {
           "minQty": 1,
@@ -1412,27 +1201,6 @@
       ],
       "bestPricePerKg": 9792,
       "ean": "7809611715029",
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-17626",
-      "name": "PROMO GYMBOX-4: 12 kg Pechuga de Pollo Organica + 180 Huevos de campo  Tamaño Extra – 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "12 kg",
-      "weightKg": 12,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox4-12-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2023/03/Pollo-Huevo-1.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 118000,
-          "pricePerKg": 9833,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 9833,
-      "ean": null,
       "inStock": true
     },
     {
@@ -1541,93 +1309,9 @@
       "inStock": true
     },
     {
-      "store": "Pollos RO",
-      "id": "pollos-ro-15697",
-      "name": "PROMO GYMBOX-1: 6 kg Pechuga de Pollo Organica + 90 Huevos de campo – Tamaño Extra 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "6 kg",
-      "weightKg": 6,
-      "url": "https://www.pollosro.cl/tienda/mas-vendidos/promo-gymbox1-15-kg-pechuga-de-pollo-organica-90-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 72000,
-          "pricePerKg": 12000,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 12000,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-15700",
-      "name": "PROMO GYMPRO1: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo – Tamaño Extra + 5 kg Churrasco Posta Rosada – 🐔+🥚+🥩",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro1-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-churrasco-posta-rosada/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Churrasco-Posta-y-Huevos-de-Campo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 198000,
-          "pricePerKg": 13200,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 13200,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-17491",
-      "name": "PROMO GYMPRO2: 15 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra + 5 kg Carne Molida Premium 3% Grasa – 🐔+🥚+🥩",
-      "brand": "Pollos RO",
-      "format": "15 kg",
-      "weightKg": 15,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gympro2-15-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra-5-kg-carne-molida-premium-3-grasa/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/12/Pechuga-de-Pollo-Molida-Tartara-y-Huevos-de-Campo.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 200000,
-          "pricePerKg": 13333,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 13333,
-      "ean": null,
-      "inStock": true
-    },
-    {
-      "store": "Pollos RO",
-      "id": "pollos-ro-17496",
-      "name": "PROMO GYMBOX-2: 6 kg Pechuga de Pollo Organica + 180 Huevos de campo Tamaño Extra – 🐔+🥚",
-      "brand": "Pollos RO",
-      "format": "6 kg",
-      "weightKg": 6,
-      "url": "https://www.pollosro.cl/tienda/promociones/promo-gymbox2-6-kg-pechuga-de-pollo-organica-180-huevos-de-campo-tamano-extra/",
-      "image": "https://www.pollosro.cl/wp-content/uploads/2021/04/WhatsApp-Image-2021-12-13-at-13.59.44.jpeg",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 92000,
-          "pricePerKg": 15333,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 15333,
-      "ean": null,
-      "inStock": true
-    },
-    {
       "store": "Alvi",
       "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
-      "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
+      "name": "Exclusivo Internet Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 2 un",
       "brand": "Sin marca",
       "format": "4.5 kg",
       "weightKg": 4.5,
@@ -1636,12 +1320,75 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 21450,
-          "pricePerKg": 4767,
+          "unitPrice": 16990,
+          "pricePerKg": 3776,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4767,
+      "bestPricePerKg": 3776,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+      "name": "Exclusivo Internet Fundo Rio Alegre Filetitos de pechuga de poll... 4.5 Kg Precio socio Desde 2 un",
+      "brand": "Sin marca",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 16990,
+          "pricePerKg": 3776,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 3776,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+      "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
+      "brand": "Sin marca",
+      "format": "800 g",
+      "weightKg": 0.8,
+      "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 3490,
+          "pricePerKg": 4363,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4363,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+      "name": "Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
+      "brand": "Sin marca",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/product/pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 20990,
+          "pricePerKg": 4664,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4664,
       "ean": null,
       "inStock": null
     },
@@ -1678,12 +1425,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 26990,
-          "pricePerKg": 5998,
+          "unitPrice": 27350,
+          "pricePerKg": 6078,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5998,
+      "bestPricePerKg": 6078,
       "ean": null,
       "inStock": null
     },
@@ -1732,7 +1479,7 @@
     {
       "store": "El Carnicero",
       "id": "el-carnicero-pechuga-deshuesada-1-kg",
-      "name": "Agotado Pechuga Deshuesada 1 kg",
+      "name": "Agotado 14% Pechuga Deshuesada 1 kg",
       "brand": "Sin marca",
       "format": "1 kg",
       "weightKg": 1,
@@ -1741,18 +1488,18 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4990,
-          "pricePerKg": 4990,
+          "unitPrice": 4290,
+          "pricePerKg": 4290,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4990,
+      "bestPricePerKg": 4290,
       "ean": null,
       "inStock": false
     },
     {
       "store": "El Carnicero",
-      "id": "el-carnicero-53jeesxksfq",
+      "id": "el-carnicero-trp3goq541j",
       "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
       "brand": "Sin marca",
       "format": "1 kg",
@@ -1762,36 +1509,36 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4990,
-          "pricePerKg": 4990,
+          "unitPrice": 4290,
+          "pricePerKg": 4290,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4990,
+      "bestPricePerKg": 4290,
       "ean": null,
       "inStock": false
     }
   ],
   "best": {
     "store": "Alvi",
-    "id": "alvi-10403",
-    "name": "Filetitos de pechuga de pollo congelada",
+    "id": "alvi-10404",
+    "name": "Pechuga de pollo deshuesada congelada",
     "brand": "Fundo Rio Alegre",
     "format": "4.5 kg",
     "weightKg": 4.5,
-    "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
-    "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
+    "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
+    "image": "https://alvicl.vtexassets.com/arquivos/ids/162229/000000000000665093-UN-01.jpg?v=638512313898070000",
     "tiers": [
       {
         "minQty": 1,
-        "unitPrice": 21090,
-        "pricePerKg": 4687,
+        "unitPrice": 16990,
+        "pricePerKg": 3776,
         "label": "regular"
       }
     ],
-    "bestPricePerKg": 4687,
-    "ean": "7894904282883",
+    "bestPricePerKg": 3776,
+    "ean": "7894904282890",
     "inStock": true
   },
-  "totalProducts": 41
+  "totalProducts": 35
 }
