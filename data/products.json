@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T07:22:47.056Z",
+  "updatedAt": "2026-09-21T07:26:11.040Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -16,12 +16,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 27350,
-              "pricePerKg": 6078,
+              "unitPrice": 27690,
+              "pricePerKg": 6153,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6078,
+          "bestPricePerKg": 6153,
           "ean": "7809611710017",
           "inStock": true
         },
@@ -184,12 +184,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 27350,
-              "pricePerKg": 6078,
+              "unitPrice": 27690,
+              "pricePerKg": 6153,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 6078,
+          "bestPricePerKg": 6153,
           "ean": null,
           "inStock": null
         },
@@ -342,7 +342,7 @@
         }
       ],
       "error": null,
-      "durationMs": 62469
+      "durationMs": 60360
     },
     {
       "store": "Jumbo",
@@ -706,31 +706,31 @@
         }
       ],
       "error": null,
-      "durationMs": 1823
+      "durationMs": 1080
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 72588
+      "durationMs": 73529
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 22153
+      "durationMs": 20403
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 29107
+      "durationMs": 29595
     },
     {
       "store": "Pollos RO",
       "products": [],
       "error": "WooCommerce API sin productos válidos",
-      "durationMs": 1538
+      "durationMs": 1473
     },
     {
       "store": "El Carnicero",
@@ -738,7 +738,7 @@
         {
           "store": "El Carnicero",
           "id": "el-carnicero-pechuga-deshuesada-1-kg",
-          "name": "Agotado 14% Pechuga Deshuesada 1 kg",
+          "name": "Pechuga Deshuesada 1 kg",
           "brand": "Sin marca",
           "format": "1 kg",
           "weightKg": 1,
@@ -747,19 +747,19 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4290,
-              "pricePerKg": 4290,
+              "unitPrice": 4790,
+              "pricePerKg": 4790,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4290,
+          "bestPricePerKg": 4790,
           "ean": null,
-          "inStock": false
+          "inStock": null
         },
         {
           "store": "El Carnicero",
-          "id": "el-carnicero-trp3goq541j",
-          "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
+          "id": "el-carnicero-9vh6ycsyxaw",
+          "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Pec",
           "brand": "Sin marca",
           "format": "1 kg",
           "weightKg": 1,
@@ -768,18 +768,18 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4290,
-              "pricePerKg": 4290,
+              "unitPrice": 4790,
+              "pricePerKg": 4790,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4290,
+          "bestPricePerKg": 4790,
           "ean": null,
           "inStock": false
         }
       ],
       "error": null,
-      "durationMs": 40705
+      "durationMs": 40592
     }
   ],
   "allProducts": [
@@ -900,12 +900,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 27350,
-          "pricePerKg": 6078,
+          "unitPrice": 27690,
+          "pricePerKg": 6153,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 6078,
+      "bestPricePerKg": 6153,
       "ean": "7809611710017",
       "inStock": true
     },
@@ -1393,6 +1393,27 @@
       "inStock": null
     },
     {
+      "store": "El Carnicero",
+      "id": "el-carnicero-pechuga-deshuesada-1-kg",
+      "name": "Pechuga Deshuesada 1 kg",
+      "brand": "Sin marca",
+      "format": "1 kg",
+      "weightKg": 1,
+      "url": "https://www.elcarnicero.cl/pechuga-deshuesada-1-kg",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4790,
+          "pricePerKg": 4790,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 4790,
+      "ean": null,
+      "inStock": null
+    },
+    {
       "store": "Alvi",
       "id": "alvi-pechuga-deshuesada-sadia-iqf-1-kg",
       "name": "Sadia Pechuga pollo deshuesada sad... 1 Kg Precio socio Desde 2 un",
@@ -1425,12 +1446,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 27350,
-          "pricePerKg": 6078,
+          "unitPrice": 27690,
+          "pricePerKg": 6153,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 6078,
+      "bestPricePerKg": 6153,
       "ean": null,
       "inStock": null
     },
@@ -1478,29 +1499,8 @@
     },
     {
       "store": "El Carnicero",
-      "id": "el-carnicero-pechuga-deshuesada-1-kg",
-      "name": "Agotado 14% Pechuga Deshuesada 1 kg",
-      "brand": "Sin marca",
-      "format": "1 kg",
-      "weightKg": 1,
-      "url": "https://www.elcarnicero.cl/pechuga-deshuesada-1-kg",
-      "image": null,
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 4290,
-          "pricePerKg": 4290,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4290,
-      "ean": null,
-      "inStock": false
-    },
-    {
-      "store": "El Carnicero",
-      "id": "el-carnicero-trp3goq541j",
-      "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
+      "id": "el-carnicero-9vh6ycsyxaw",
+      "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Pec",
       "brand": "Sin marca",
       "format": "1 kg",
       "weightKg": 1,
@@ -1509,12 +1509,12 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4290,
-          "pricePerKg": 4290,
+          "unitPrice": 4790,
+          "pricePerKg": 4790,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 4290,
+      "bestPricePerKg": 4790,
       "ean": null,
       "inStock": false
     }
