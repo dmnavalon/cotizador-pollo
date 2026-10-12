@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T07:54:55.770Z",
+  "updatedAt": "2026-10-12T08:16:30.150Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -16,12 +16,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 19990,
-              "pricePerKg": 4442,
+              "unitPrice": 27690,
+              "pricePerKg": 6153,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4442,
+          "bestPricePerKg": 6153,
           "ean": "7809611710017",
           "inStock": true
         },
@@ -48,27 +48,6 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-3146",
-          "name": "Filetitos de pechuga de pollo congelado",
-          "brand": "Super Pollo",
-          "format": "700 g",
-          "weightKg": 0.7,
-          "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-congelado",
-          "image": "https://alvicl.vtexassets.com/arquivos/ids/166683/000000000000578195-UN-TEL.jpg?v=638986605795770000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 3540,
-              "pricePerKg": 5057,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 5057,
-          "ean": "7809611720573",
-          "inStock": true
-        },
-        {
-          "store": "Alvi",
           "id": "alvi-10404",
           "name": "Pechuga de pollo deshuesada congelada",
           "brand": "Fundo Rio Alegre",
@@ -86,27 +65,6 @@
           ],
           "bestPricePerKg": 4220,
           "ean": "7894904282890",
-          "inStock": true
-        },
-        {
-          "store": "Alvi",
-          "id": "alvi-3156",
-          "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
-          "brand": "Fundo Rio Alegre",
-          "format": "800 g",
-          "weightKg": 0.8,
-          "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-          "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 3490,
-              "pricePerKg": 4363,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4363,
-          "ean": "7894904084302",
           "inStock": true
         },
         {
@@ -132,6 +90,48 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-3156",
+          "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
+          "brand": "Fundo Rio Alegre",
+          "format": "800 g",
+          "weightKg": 0.8,
+          "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3930,
+              "pricePerKg": 4913,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4913,
+          "ean": "7894904084302",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-3146",
+          "name": "Filetitos de pechuga de pollo congelado",
+          "brand": "Super Pollo",
+          "format": "700 g",
+          "weightKg": 0.7,
+          "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-congelado",
+          "image": "https://alvicl.vtexassets.com/arquivos/ids/166683/000000000000578195-UN-TEL.jpg?v=638986605795770000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4690,
+              "pricePerKg": 6700,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 6700,
+          "ean": "7809611720573",
+          "inStock": true
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-10254",
           "name": "Pechuga pollo deshuesada Sadía congelada 1 Kg Pechuga deshuesada de pollo congelada bolsa",
           "brand": "Sadia",
@@ -142,12 +142,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 5250,
-              "pricePerKg": 5250,
+              "unitPrice": 5290,
+              "pricePerKg": 5290,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5250,
+          "bestPricePerKg": 5290,
           "ean": "7891515551995",
           "inStock": true
         },
@@ -184,12 +184,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 19990,
-              "pricePerKg": 4442,
+              "unitPrice": 27690,
+              "pricePerKg": 6153,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 4442,
+          "bestPricePerKg": 6153,
           "ean": null,
           "inStock": null
         },
@@ -216,27 +216,6 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
-          "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
-          "brand": "Sin marca",
-          "format": "700 g",
-          "weightKg": 0.7,
-          "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
-          "image": null,
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 3540,
-              "pricePerKg": 5057,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 5057,
-          "ean": null,
-          "inStock": null
-        },
-        {
-          "store": "Alvi",
           "id": "alvi-pechuga-de-pollo-deshuesada-f-r-a-4-5-kg",
           "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 4.5 Kg Precio socio Desde 3 un",
           "brand": "Sin marca",
@@ -253,27 +232,6 @@
             }
           ],
           "bestPricePerKg": 4220,
-          "ean": null,
-          "inStock": null
-        },
-        {
-          "store": "Alvi",
-          "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-          "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
-          "brand": "Sin marca",
-          "format": "800 g",
-          "weightKg": 0.8,
-          "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-          "image": null,
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 3490,
-              "pricePerKg": 4363,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4363,
           "ean": null,
           "inStock": null
         },
@@ -300,6 +258,48 @@
         },
         {
           "store": "Alvi",
+          "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
+          "brand": "Sin marca",
+          "format": "800 g",
+          "weightKg": 0.8,
+          "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 3930,
+              "pricePerKg": 4913,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 4913,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
+          "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
+          "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+          "brand": "Sin marca",
+          "format": "700 g",
+          "weightKg": 0.7,
+          "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
+          "image": null,
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 4690,
+              "pricePerKg": 6700,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 6700,
+          "ean": null,
+          "inStock": null
+        },
+        {
+          "store": "Alvi",
           "id": "alvi-pechuga-deshuesada-sadia-iqf-1-kg",
           "name": "Sadia Pechuga pollo deshuesada sad... 1 Kg Precio socio Desde 2 un",
           "brand": "Sin marca",
@@ -310,18 +310,18 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 5250,
-              "pricePerKg": 5250,
+              "unitPrice": 5290,
+              "pricePerKg": 5290,
               "label": "regular"
             }
           ],
-          "bestPricePerKg": 5250,
+          "bestPricePerKg": 5290,
           "ean": null,
           "inStock": null
         }
       ],
       "error": null,
-      "durationMs": 59884
+      "durationMs": 61384
     },
     {
       "store": "Jumbo",
@@ -359,12 +359,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4490,
-              "pricePerKg": 5410,
-              "label": "oferta"
+              "unitPrice": 7690,
+              "pricePerKg": 9265,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 5410,
+          "bestPricePerKg": 9265,
           "ean": "7804115001081",
           "inStock": true
         },
@@ -422,12 +422,12 @@
           "tiers": [
             {
               "minQty": 1,
-              "unitPrice": 4490,
-              "pricePerKg": 5282,
-              "label": "oferta"
+              "unitPrice": 7690,
+              "pricePerKg": 9047,
+              "label": "regular"
             }
           ],
-          "bestPricePerKg": 5282,
+          "bestPricePerKg": 9047,
           "ean": "7804115001739",
           "inStock": true
         },
@@ -685,31 +685,31 @@
         }
       ],
       "error": null,
-      "durationMs": 1690
+      "durationMs": 1717
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 72695
+      "durationMs": 72893
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 21309
+      "durationMs": 20369
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 31165
+      "durationMs": 29827
     },
     {
       "store": "Pollos RO",
       "products": [],
       "error": "WooCommerce API sin productos válidos",
-      "durationMs": 1629
+      "durationMs": 1754
     },
     {
       "store": "El Carnicero",
@@ -737,7 +737,7 @@
         },
         {
           "store": "El Carnicero",
-          "id": "el-carnicero-y7ybwsynet9",
+          "id": "el-carnicero-20i0j7ld8x2i",
           "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
           "brand": "Sin marca",
           "format": "1 kg",
@@ -758,7 +758,7 @@
         }
       ],
       "error": null,
-      "durationMs": 41342
+      "durationMs": 41012
     }
   ],
   "allProducts": [
@@ -806,48 +806,6 @@
     },
     {
       "store": "Alvi",
-      "id": "alvi-3156",
-      "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
-      "brand": "Fundo Rio Alegre",
-      "format": "800 g",
-      "weightKg": 0.8,
-      "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 3490,
-          "pricePerKg": 4363,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4363,
-      "ean": "7894904084302",
-      "inStock": true
-    },
-    {
-      "store": "Alvi",
-      "id": "alvi-3151",
-      "name": "Pechuga deshuesada Super Pollo congelada 4.5 Kg Pechuga deshuesada de pollo congelada",
-      "brand": "Super Pollo",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/157200/Pechuga-deshuesada-congelada.jpg?v=637870987518100000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 19990,
-          "pricePerKg": 4442,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4442,
-      "ean": "7809611710017",
-      "inStock": true
-    },
-    {
-      "store": "Alvi",
       "id": "alvi-3164",
       "name": "Pechuga deshuesada de pollo congelado Sadia 4.5 Kg Pechuga deshuesada de pollo congelado",
       "brand": "Sadia",
@@ -869,23 +827,23 @@
     },
     {
       "store": "Alvi",
-      "id": "alvi-3146",
-      "name": "Filetitos de pechuga de pollo congelado",
-      "brand": "Super Pollo",
-      "format": "700 g",
-      "weightKg": 0.7,
-      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-congelado",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/166683/000000000000578195-UN-TEL.jpg?v=638986605795770000",
+      "id": "alvi-3156",
+      "name": "Pechuga de pollo deshuesada Fundo Río Alegre congelada 800 g Pechuga de pollo deshuesada congelada",
+      "brand": "Fundo Rio Alegre",
+      "format": "800 g",
+      "weightKg": 0.8,
+      "url": "https://www.alvi.cl/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/157205/Pechuga-de-pollo-deshuesada-congelada.jpg?v=637870987561600000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 3540,
-          "pricePerKg": 5057,
+          "unitPrice": 3930,
+          "pricePerKg": 4913,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5057,
-      "ean": "7809611720573",
+      "bestPricePerKg": 4913,
+      "ean": "7894904084302",
       "inStock": true
     },
     {
@@ -900,55 +858,34 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 5250,
-          "pricePerKg": 5250,
+          "unitPrice": 5290,
+          "pricePerKg": 5290,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5250,
+      "bestPricePerKg": 5290,
       "ean": "7891515551995",
       "inStock": true
     },
     {
-      "store": "Jumbo",
-      "id": "jumbo-88661",
-      "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
-      "brand": "Ariztía",
-      "format": "850 g",
-      "weightKg": 0.85,
-      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
+      "store": "Alvi",
+      "id": "alvi-3151",
+      "name": "Pechuga deshuesada Super Pollo congelada 4.5 Kg Pechuga deshuesada de pollo congelada",
+      "brand": "Super Pollo",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/157200/Pechuga-deshuesada-congelada.jpg?v=637870987518100000",
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 4490,
-          "pricePerKg": 5282,
-          "label": "oferta"
+          "unitPrice": 27690,
+          "pricePerKg": 6153,
+          "label": "regular"
         }
       ],
-      "bestPricePerKg": 5282,
-      "ean": "7804115001739",
-      "inStock": true
-    },
-    {
-      "store": "Jumbo",
-      "id": "jumbo-11180",
-      "name": "Filetillos de Pechuga de Pollo Ariztía 830 g",
-      "brand": "Ariztía",
-      "format": "830 g",
-      "weightKg": 0.83,
-      "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
-      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 4490,
-          "pricePerKg": 5410,
-          "label": "oferta"
-        }
-      ],
-      "bestPricePerKg": 5410,
-      "ean": "7804115001081",
+      "bestPricePerKg": 6153,
+      "ean": "7809611710017",
       "inStock": true
     },
     {
@@ -991,6 +928,27 @@
       ],
       "bestPricePerKg": 6590,
       "ean": "24978521",
+      "inStock": true
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-3146",
+      "name": "Filetitos de pechuga de pollo congelado",
+      "brand": "Super Pollo",
+      "format": "700 g",
+      "weightKg": 0.7,
+      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-congelado",
+      "image": "https://alvicl.vtexassets.com/arquivos/ids/166683/000000000000578195-UN-TEL.jpg?v=638986605795770000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4690,
+          "pricePerKg": 6700,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6700,
+      "ean": "7809611720573",
       "inStock": true
     },
     {
@@ -1117,6 +1075,48 @@
       ],
       "bestPricePerKg": 7587,
       "ean": "7809611722034",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
+      "id": "jumbo-88661",
+      "name": "Pechuga de Pollo Deshuesada Ariztía Sin Piel 850 g",
+      "brand": "Ariztía",
+      "format": "850 g",
+      "weightKg": 0.85,
+      "url": "https://www.jumbo.cl/pechuga-deshuesada-de-pollo-sin-piel-850-g/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/672162/Pechuga-de-Pollo-Deshuesada-Ariztia-Sin-Piel-850-g.jpg?v=639237057386030000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 7690,
+          "pricePerKg": 9047,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 9047,
+      "ean": "7804115001739",
+      "inStock": true
+    },
+    {
+      "store": "Jumbo",
+      "id": "jumbo-11180",
+      "name": "Filetillos de Pechuga de Pollo Ariztía 830 g",
+      "brand": "Ariztía",
+      "format": "830 g",
+      "weightKg": 0.83,
+      "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
+      "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 7690,
+          "pricePerKg": 9265,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 9265,
+      "ean": "7804115001081",
       "inStock": true
     },
     {
@@ -1310,48 +1310,6 @@
     },
     {
       "store": "Alvi",
-      "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-      "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
-      "brand": "Sin marca",
-      "format": "800 g",
-      "weightKg": 0.8,
-      "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-      "image": null,
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 3490,
-          "pricePerKg": 4363,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4363,
-      "ean": null,
-      "inStock": null
-    },
-    {
-      "store": "Alvi",
-      "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-      "name": "Cyber Socio Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
-      "brand": "Sin marca",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/product/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-      "image": null,
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 19990,
-          "pricePerKg": 4442,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4442,
-      "ean": null,
-      "inStock": null
-    },
-    {
-      "store": "Alvi",
       "id": "alvi-pechuga-deshuesada-de-pollo-congelado-sadia-4-5-kg",
       "name": "Sadia Pechuga deshuesada de pollo ... 4.5 Kg Precio socio Desde 2 un",
       "brand": "Sin marca",
@@ -1373,22 +1331,22 @@
     },
     {
       "store": "Alvi",
-      "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
-      "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+      "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
+      "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
       "brand": "Sin marca",
-      "format": "700 g",
-      "weightKg": 0.7,
-      "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
+      "format": "800 g",
+      "weightKg": 0.8,
+      "url": "https://www.alvi.cl/product/pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
       "image": null,
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 3540,
-          "pricePerKg": 5057,
+          "unitPrice": 3930,
+          "pricePerKg": 4913,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5057,
+      "bestPricePerKg": 4913,
       "ean": null,
       "inStock": null
     },
@@ -1404,12 +1362,33 @@
       "tiers": [
         {
           "minQty": 1,
-          "unitPrice": 5250,
-          "pricePerKg": 5250,
+          "unitPrice": 5290,
+          "pricePerKg": 5290,
           "label": "regular"
         }
       ],
-      "bestPricePerKg": 5250,
+      "bestPricePerKg": 5290,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+      "name": "Cyber Socio Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
+      "brand": "Sin marca",
+      "format": "4.5 kg",
+      "weightKg": 4.5,
+      "url": "https://www.alvi.cl/product/pechuga-deshuesada-super-pollo-congelada-4-5-kg",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 27690,
+          "pricePerKg": 6153,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6153,
       "ean": null,
       "inStock": null
     },
@@ -1431,6 +1410,27 @@
         }
       ],
       "bestPricePerKg": 6387,
+      "ean": null,
+      "inStock": null
+    },
+    {
+      "store": "Alvi",
+      "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
+      "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+      "brand": "Sin marca",
+      "format": "700 g",
+      "weightKg": 0.7,
+      "url": "https://www.alvi.cl/product/filetitos-de-pechuga-de-pollo-congelado",
+      "image": null,
+      "tiers": [
+        {
+          "minQty": 1,
+          "unitPrice": 4690,
+          "pricePerKg": 6700,
+          "label": "regular"
+        }
+      ],
+      "bestPricePerKg": 6700,
       "ean": null,
       "inStock": null
     },
@@ -1457,7 +1457,7 @@
     },
     {
       "store": "El Carnicero",
-      "id": "el-carnicero-y7ybwsynet9",
+      "id": "el-carnicero-20i0j7ld8x2i",
       "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
       "brand": "Sin marca",
       "format": "1 kg",
