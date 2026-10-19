@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T08:16:30.150Z",
+  "updatedAt": "2026-10-19T07:09:16.171Z",
   "scrapes": [
     {
       "store": "Alvi",
@@ -153,29 +153,8 @@
         },
         {
           "store": "Alvi",
-          "id": "alvi-10403",
-          "name": "Filetitos de pechuga de pollo congelada",
-          "brand": "Fundo Rio Alegre",
-          "format": "4.5 kg",
-          "weightKg": 4.5,
-          "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
-          "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 18990,
-              "pricePerKg": 4220,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 4220,
-          "ean": "7894904282883",
-          "inStock": true
-        },
-        {
-          "store": "Alvi",
           "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-          "name": "Cyber Socio Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
+          "name": "Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
           "brand": "Sin marca",
           "format": "4.5 kg",
           "weightKg": 4.5,
@@ -259,7 +238,7 @@
         {
           "store": "Alvi",
           "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-          "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
+          "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
           "brand": "Sin marca",
           "format": "800 g",
           "weightKg": 0.8,
@@ -280,7 +259,7 @@
         {
           "store": "Alvi",
           "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
-          "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+          "name": "Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
           "brand": "Sin marca",
           "format": "700 g",
           "weightKg": 0.7,
@@ -321,7 +300,7 @@
         }
       ],
       "error": null,
-      "durationMs": 61384
+      "durationMs": 61178
     },
     {
       "store": "Jumbo",
@@ -349,27 +328,6 @@
         },
         {
           "store": "Jumbo",
-          "id": "jumbo-11180",
-          "name": "Filetillos de Pechuga de Pollo Ariztía 830 g",
-          "brand": "Ariztía",
-          "format": "830 g",
-          "weightKg": 0.83,
-          "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
-          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
-          "tiers": [
-            {
-              "minQty": 1,
-              "unitPrice": 7690,
-              "pricePerKg": 9265,
-              "label": "regular"
-            }
-          ],
-          "bestPricePerKg": 9265,
-          "ean": "7804115001081",
-          "inStock": true
-        },
-        {
-          "store": "Jumbo",
           "id": "jumbo-41157",
           "name": "Pechuga de Pollo Deshuesada Ariztía 700 g",
           "brand": "Ariztía",
@@ -387,6 +345,27 @@
           ],
           "bestPricePerKg": 10886,
           "ean": "7808749501146",
+          "inStock": true
+        },
+        {
+          "store": "Jumbo",
+          "id": "jumbo-11180",
+          "name": "Filetillos de Pechuga de Pollo Ariztía 830 g",
+          "brand": "Ariztía",
+          "format": "830 g",
+          "weightKg": 0.83,
+          "url": "https://www.jumbo.cl/filetillos-de-pechuga-de-pollo-ariztia-830-g/p",
+          "image": "https://jumbocl.vteximg.com.br/arquivos/ids/671994/Filetillos-de-Pechuga-de-Pollo-Ariztia-830-g.jpg?v=639237057101800000",
+          "tiers": [
+            {
+              "minQty": 1,
+              "unitPrice": 7690,
+              "pricePerKg": 9265,
+              "label": "regular"
+            }
+          ],
+          "bestPricePerKg": 9265,
+          "ean": "7804115001081",
           "inStock": true
         },
         {
@@ -685,31 +664,31 @@
         }
       ],
       "error": null,
-      "durationMs": 1717
+      "durationMs": 1554
     },
     {
       "store": "Lider",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 72893
+      "durationMs": 71745
     },
     {
       "store": "Tottus",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 20369
+      "durationMs": 21487
     },
     {
       "store": "Agrosuper Ventas Online",
       "products": [],
       "error": "Playwright sin productos válidos",
-      "durationMs": 29827
+      "durationMs": 30583
     },
     {
       "store": "Pollos RO",
       "products": [],
       "error": "WooCommerce API sin productos válidos",
-      "durationMs": 1754
+      "durationMs": 1597
     },
     {
       "store": "El Carnicero",
@@ -737,7 +716,7 @@
         },
         {
           "store": "El Carnicero",
-          "id": "el-carnicero-20i0j7ld8x2i",
+          "id": "el-carnicero-1rbgmyjl5ea",
           "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
           "brand": "Sin marca",
           "format": "1 kg",
@@ -758,7 +737,7 @@
         }
       ],
       "error": null,
-      "durationMs": 41012
+      "durationMs": 40646
     }
   ],
   "allProducts": [
@@ -781,27 +760,6 @@
       ],
       "bestPricePerKg": 4220,
       "ean": "7894904282890",
-      "inStock": true
-    },
-    {
-      "store": "Alvi",
-      "id": "alvi-10403",
-      "name": "Filetitos de pechuga de pollo congelada",
-      "brand": "Fundo Rio Alegre",
-      "format": "4.5 kg",
-      "weightKg": 4.5,
-      "url": "https://www.alvi.cl/filetitos-de-pechuga-de-pollo-f-r-a-4-5k",
-      "image": "https://alvicl.vtexassets.com/arquivos/ids/162228/000000000000665092-UN-01.jpg?v=638512313895270000",
-      "tiers": [
-        {
-          "minQty": 1,
-          "unitPrice": 18990,
-          "pricePerKg": 4220,
-          "label": "regular"
-        }
-      ],
-      "bestPricePerKg": 4220,
-      "ean": "7894904282883",
       "inStock": true
     },
     {
@@ -1332,7 +1290,7 @@
     {
       "store": "Alvi",
       "id": "alvi-pechuga-de-pollo-deshuesada-fundo-rio-alegre-congelada-800-g",
-      "name": "Cyber Socio Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
+      "name": "Fundo Rio Alegre Pechuga de pollo deshuesada ... 800 g Precio socio Desde 3 un",
       "brand": "Sin marca",
       "format": "800 g",
       "weightKg": 0.8,
@@ -1374,7 +1332,7 @@
     {
       "store": "Alvi",
       "id": "alvi-pechuga-deshuesada-super-pollo-congelada-4-5-kg",
-      "name": "Cyber Socio Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
+      "name": "Super Pollo Pechuga deshuesada super pol... 4.5 Kg Precio socio Desde 2 un",
       "brand": "Sin marca",
       "format": "4.5 kg",
       "weightKg": 4.5,
@@ -1416,7 +1374,7 @@
     {
       "store": "Alvi",
       "id": "alvi-filetitos-de-pechuga-de-pollo-congelado",
-      "name": "Cyber Socio Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
+      "name": "Super Pollo Filetitos de pechuga de poll... 700 g Precio socio Desde 3 un",
       "brand": "Sin marca",
       "format": "700 g",
       "weightKg": 0.7,
@@ -1457,7 +1415,7 @@
     },
     {
       "store": "El Carnicero",
-      "id": "el-carnicero-20i0j7ld8x2i",
+      "id": "el-carnicero-1rbgmyjl5ea",
       "name": "Filtrar resultados 1-4 de 4 productos para \"pechuga deshuesada\" ORDENAR POR Posición Nombre: A a la Z Nombre: Z a A Precio: de menor a mayor Precio: de mayor a menor Fecha: Lo más reciente primero Ago",
       "brand": "Sin marca",
       "format": "1 kg",
@@ -1498,5 +1456,5 @@
     "ean": "7894904282890",
     "inStock": true
   },
-  "totalProducts": 34
+  "totalProducts": 33
 }
